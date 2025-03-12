@@ -26,7 +26,9 @@
     {"$GMFolder":"","%Name":"Tilesets","folderPath":"folders/Tilesets.yy","name":"Tilesets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Zeitlinien","folderPath":"folders/Zeitlinien.yy","name":"Zeitlinien","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"emails.json","CopyToMask":-1,"filePath":"datafiles","name":"emails.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -34,7 +36,9 @@
   },
   "name":"YourOwnClouds",
   "resources":[
-    {"id":{"name":"DefaultGUI","path":"fonts/DefaultGUI/DefaultGUI.yy",},},
+    {"id":{"name":"bigGUI","path":"fonts/bigGUI/bigGUI.yy",},},
+    {"id":{"name":"mediumGUI","path":"fonts/mediumGUI/mediumGUI.yy",},},
+    {"id":{"name":"smallGUI","path":"fonts/smallGUI/smallGUI.yy",},},
     {"id":{"name":"CPU","path":"objects/CPU/CPU.yy",},},
     {"id":{"name":"Fan","path":"objects/Fan/Fan.yy",},},
     {"id":{"name":"HDD","path":"objects/HDD/HDD.yy",},},
@@ -50,6 +54,7 @@
     {"id":{"name":"CPUSprite","path":"sprites/CPUSprite/CPUSprite.yy",},},
     {"id":{"name":"FanSideSprite","path":"sprites/FanSideSprite/FanSideSprite.yy",},},
     {"id":{"name":"FanTopSprite","path":"sprites/FanTopSprite/FanTopSprite.yy",},},
+    {"id":{"name":"GUISprite","path":"sprites/GUISprite/GUISprite.yy",},},
     {"id":{"name":"HDDSideSprite","path":"sprites/HDDSideSprite/HDDSideSprite.yy",},},
     {"id":{"name":"HDDTopSprite","path":"sprites/HDDTopSprite/HDDTopSprite.yy",},},
     {"id":{"name":"MainboardSprite","path":"sprites/MainboardSprite/MainboardSprite.yy",},},
@@ -69,6 +74,7 @@
     {"id":{"name":"ReturnButtonSprite","path":"sprites/ReturnButtonSprite/ReturnButtonSprite.yy",},},
     {"id":{"name":"ServerCaseSprite","path":"sprites/ServerCaseSprite/ServerCaseSprite.yy",},},
     {"id":{"name":"WoodTexture","path":"sprites/WoodTexture/WoodTexture.yy",},},
+    {"id":{"name":"GUITileSet","path":"tilesets/GUITileSet/GUITileSet.yy",},},
     {"id":{"name":"OfficeInteriorTileSet","path":"tilesets/OfficeInteriorTileSet/OfficeInteriorTileSet.yy",},},
     {"id":{"name":"OfficeTileSet","path":"tilesets/OfficeTileSet/OfficeTileSet.yy",},},
   ],

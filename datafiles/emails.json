@@ -1,0 +1,74 @@
+{
+  "1": {
+    "title": "freeTrash",
+    "content": "Simply reply to this email with your credit card details and you'll get a free brick delivered right to your doorstep! *General terms and conditions apply, minimum contract term 24 months with a monthly membership fee of $45",
+    "type": "spam",
+    "spam": true
+  },
+  "2": {
+    "title": "TestSPAM2",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "3": {
+    "title": "TestSPAM3",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "4": {
+    "title": "TestSPAM4",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "5": {
+    "title": "TestSPAM5",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "6": {
+    "title": "TestSPAM6",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "7": {
+    "title": "TestSPAM7",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "8": {
+    "title": "TestSPAM8",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "9": {
+    "title": "TestSPAM9",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "10": {
+    "title": "TestSPAM10",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "11": {
+    "title": "TestSPAM11",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  },
+  "12": {
+    "title": "TestSPAM12",
+    "content": "Das ist ein Test Spam",
+    "type": "spam",
+    "spam": true
+  }
+}

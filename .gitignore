@@ -26,6 +26,10 @@ $RECYCLE.BIN/
 *.lnk
 
 sprites/**
+tilesets/**
+fonts/**
+
+*.png
  
 # Mac
  
