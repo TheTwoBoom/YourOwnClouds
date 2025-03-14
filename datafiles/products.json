@@ -1,0 +1,76 @@
+{
+  "servers": {
+    "displayName": "Pre-built Servers",
+    "icon": 1367,
+    "items": {
+      "1": {
+        "name": "SuperServer1000",
+        "description": "This Server is a Server"
+      },
+      "2": {
+        "name": "SuperServer2000",
+        "description": "This Server is a Server"
+      }
+    }
+  },
+  "mainboard": {
+    "displayName": "Mainboards",
+    "icon": 1367,
+    "items": {
+      "1": {
+        "name": "SuperMainboard1000",
+        "description": "Great Mainboard, Type 1000"
+      }
+    }
+  },
+  "cpu": {
+    "displayName": "CPUs",
+    "icon": 1367,
+    "items": {
+      "1": {
+        "name": "SuperCPU1000",
+        "description": "Great CPU, Type 1000"
+      }
+    }
+  },
+  "ram": {
+    "displayName": "RAM",
+    "icon": 1367,
+    "items": {
+      "1": {
+        "name": "SuperRAM1000",
+        "description": "Great RAM, Type 1000"
+      }
+    }
+  },
+  "psu": {
+    "displayName": "Power Supplies",
+    "icon": 1367,
+    "items": {
+      "1": {
+        "name": "SuperPSU1000",
+        "description": "Great PSU, Type 1000"
+      }
+    }
+  },
+  "ssd": {
+    "displayName": "SSDs",
+    "icon": 1367,
+    "items": {
+      "1": {
+        "name": "SuperSSD1000",
+        "description": "Great SSD, Type 1000"
+      }
+    }
+  },
+  "hdd": {
+    "displayName": "HDDs",
+    "icon": 1367,
+    "items": {
+      "1": {
+        "name": "SuperHDD1000",
+        "description": "Great HDD, Type 1000"
+      }
+    }
+  }
+}

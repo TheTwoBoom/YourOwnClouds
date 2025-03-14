@@ -2,10 +2,14 @@ direction = 0;
 running = false;
 gui_open = false;
 desktop_textlayer = layer_get_id("GUIDesktopText");
-desktop_symbollayer = layer_get_id("GUIDesktopButtons");
-email_textlayer = layer_get_id("GUIEmailText")
+desktop_buttonlayer = layer_get_id("GUIDesktopButtons");
+
 email_contentlayer = layer_get_id("GUIEmailContentField")
-email_symbollayer = layer_get_id("GUIEmailButtons")
+email_buttonlayer = layer_get_id("GUIEmailButtons")
+
+shop_contentlayer = layer_get_id("GUIShopContentField")
+shop_buttonlayer = layer_get_id("GUIShopButtons")
+shop_iconlayer = layer_get_id("GUIShopIcons")
 windowlayer = layer_get_id("GUIWindow");
 
 global.y_offset = 0;
@@ -18,6 +22,8 @@ if layer_exists("OfficeBorder") {
     tilemap[3] = layer_tilemap_get_id("OfficeBorder");
     gui_tilemap[0] = layer_tilemap_get_id("GUIEmailButtons");
     gui_tilemap[1] = layer_tilemap_get_id("GUIDesktopButtons");
+    gui_tilemap[2] = layer_tilemap_get_id("GUIShopButtons");
+    gui_tilemap[3] = layer_tilemap_get_id("GUIShopIcons");
 } else {
     tilemap[0] = layer_tilemap_get_id("DCInteriorFurniture");
 }
