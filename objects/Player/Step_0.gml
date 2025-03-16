@@ -9,6 +9,7 @@ function toggleDesktop(type, status) {
         layer_set_visible(shop_buttonlayer, status);
         layer_set_visible(shop_contentlayer, status);
         layer_set_visible(shop_iconlayer, status);
+        layer_set_visible(shop_searchlayer, status);
     }
 }
 
@@ -49,28 +50,49 @@ if (position_meeting(mouse_x, mouse_y, gui_tilemap) && mouse_check_button_presse
             global.y_offset += 1;
         }
     } else if (layer_get_visible(shop_buttonlayer)) {
-        var data = tilemap_get_at_pixel(gui_tilemap[0], mouse_x, mouse_y);
+        var data = tilemap_get_at_pixel(gui_tilemap[2], mouse_x, mouse_y);
         if (data == 152) {
             toggleDesktop("shop", false);
-            toggleDesktop("desktop", true); 
+            toggleDesktop("desktop", true);
+            global.viewed_category = undefined;
+            global.viewed_product = undefined;
+        } else if (data == 212) {
+            global.viewed_category = undefined;
+            global.viewed_product = undefined;
+        } else if (data == 214 && global.y_offset > 0) {
+            global.y_offset -= 1;
+        } else if (data == 213 && global.y_offset <= variable_struct_names_count(global.emails) - 10) {
+            global.y_offset += 1;
         }
     }
 } else if (mouse_check_button_pressed(mb_left) && layer_get_visible(email_buttonlayer)) {
     for (i=global.y_offset+1;i<(10 + global.y_offset);i++) {
         email = global.emails[$ i];
-        title_x = 416;
-        title_y = 240 + i * 20 - global.y_offset * 20;
-        if (mouse_x >= title_x && mouse_x <= title_x + 128 && mouse_y >= title_y && mouse_y <= title_y + 32) {
+        title_x = 640;
+        title_y = 240 + i * 48 - global.y_offset * 48; 
+        if (mouse_x >= title_x && mouse_x <= title_x + 240 && mouse_y >= title_y && mouse_y <= title_y + 48) {
             global.viewed_email = email;
         }
     }
 } else if (mouse_check_button_pressed(mb_left) && layer_get_visible(shop_buttonlayer)) {
-    for (i=global.y_offset+1;i<(10 + global.y_offset);i++) {
-        product = global.products[$ i];
-        shop_x = 416;
-        shop_y = 240 + i * 20 - global.y_offset * 20;
-        if (mouse_x >= shop_x && mouse_x <= shop_x + 128 && mouse_y >= shop_y && mouse_y <= shop_y + 32) {
-            global.viewed_product = product;
+    if (!variable_global_exists("viewed_category") || global.viewed_category == undefined) {
+        shop_x = 640;
+        for (i=global.y_offset+1;i<(7 + global.y_offset);i++) {
+            category = global.shopdata[$ (struct_get_names(global.shopdata)[i])]
+            shop_y = 336 + (i - 1) * 48 - global.y_offset * 48; 
+            if (mouse_x >= shop_x && mouse_x <= shop_x + 240 && mouse_y >= shop_y && mouse_y <= shop_y + 48) {
+                global.viewed_category = category;
+            }
+        }
+    } else if (global.viewed_category != undefined) {
+        tilemap_set_at_pixel(gui_tilemap[3], 0, 580, title_y);
+        shop_x = 592;
+        for (i=global.y_offset+1;i<(7 + global.y_offset);i++) {
+            product = global.viewed_category[$ "items"][$ i];
+            shop_y = 384 + (i - 1) * 48 - global.y_offset * 48; 
+            if (mouse_x >= shop_x && mouse_x <= shop_x + 240 && mouse_y >= shop_y && mouse_y <= shop_y + 48) {
+                global.viewed_product = product;
+            }
         }
     }
 }
@@ -81,6 +103,6 @@ if (running) {
     speed = 0;
 }
 
-if (x <=400 && room == Office) {
+if (x <= 400 && room == Office) {
     room_goto(BuildRoom);
 }

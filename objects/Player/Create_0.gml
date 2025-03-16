@@ -10,6 +10,7 @@ email_buttonlayer = layer_get_id("GUIEmailButtons")
 shop_contentlayer = layer_get_id("GUIShopContentField")
 shop_buttonlayer = layer_get_id("GUIShopButtons")
 shop_iconlayer = layer_get_id("GUIShopIcons")
+shop_searchlayer = layer_get_id("GUIShopSearch")
 windowlayer = layer_get_id("GUIWindow");
 
 global.y_offset = 0;

@@ -29,6 +29,7 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"emails.json","CopyToMask":-1,"filePath":"datafiles","name":"emails.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"products.json","CopyToMask":-1,"filePath":"datafiles","name":"products.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"save.json","CopyToMask":-1,"filePath":"datafiles","name":"save.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -38,7 +39,7 @@
   "name":"YourOwnClouds",
   "resources":[
     {"id":{"name":"bigGUI","path":"fonts/bigGUI/bigGUI.yy",},},
-    {"id":{"name":"mediumBoldGUI","path":"fonts/mediumBoldGUI/mediumBoldGUI.yy",},},
+    {"id":{"name":"mediumBigGUI","path":"fonts/mediumBigGUI/mediumBigGUI.yy",},},
     {"id":{"name":"mediumGUI","path":"fonts/mediumGUI/mediumGUI.yy",},},
     {"id":{"name":"smallGUI","path":"fonts/smallGUI/smallGUI.yy",},},
     {"id":{"name":"CPU","path":"objects/CPU/CPU.yy",},},
@@ -53,6 +54,7 @@
     {"id":{"name":"BuildRoom","path":"rooms/BuildRoom/BuildRoom.yy",},},
     {"id":{"name":"DatacenterSmall","path":"rooms/DatacenterSmall/DatacenterSmall.yy",},},
     {"id":{"name":"Office","path":"rooms/Office/Office.yy",},},
+    {"id":{"name":"saveSystem","path":"scripts/saveSystem/saveSystem.yy",},},
     {"id":{"name":"CPUSprite","path":"sprites/CPUSprite/CPUSprite.yy",},},
     {"id":{"name":"FanSideSprite","path":"sprites/FanSideSprite/FanSideSprite.yy",},},
     {"id":{"name":"FanTopSprite","path":"sprites/FanTopSprite/FanTopSprite.yy",},},

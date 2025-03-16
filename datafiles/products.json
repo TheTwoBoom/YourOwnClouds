@@ -1,75 +1,98 @@
 {
   "servers": {
-    "displayName": "Pre-built Servers",
-    "icon": 1367,
+    "displayName": "Servers",
+    "icon": "1367",
     "items": {
       "1": {
-        "name": "SuperServer1000",
-        "description": "This Server is a Server"
+        "displayName": "WhyNot Rack 3010",
+        "description": "A ready to use Server with 64GB of DDR4 RAM and an BMD Epix 1335 24-Core 2.35GHz CPU. No storage included",
+        "price": 1250
       },
       "2": {
-        "name": "SuperServer2000",
-        "description": "This Server is a Server"
+        "displayName": "WhyNot Rack 3010s",
+        "description": "A ready to use Server with 64GB of DDR4 RAM and an BMD Epix 1335 24-Core 2.35GHz CPU. Also includes 2x 1.92TB SSDs",
+        "price": 1450
+      },
+      "3": {
+        "displayName": "WhyNot Rack 3020s",
+        "description": "A ready to use Server with 128GB of DDR4 RAM and an BMD Epix 1445 32-Core 3.2GHz CPU. Also includes 4x 1.92TB SSDs",
+        "price": 1000
       }
     }
   },
   "mainboard": {
     "displayName": "Mainboards",
-    "icon": 1367,
+    "icon": "1367",
     "items": {
       "1": {
-        "name": "SuperMainboard1000",
-        "description": "Great Mainboard, Type 1000"
+        "displayName": "GreatCom 1S-SP3",
+        "description": "Simple E-ATX Mainboard for a single Socket SP3 BMD Epix System. 6x PCIe x16 Connectors and 2x 10GBit Network Ports",
+        "price": 450
+      },
+      "2": {
+        "displayName": "GreatCom 1S-AM4",
+        "description": "Simple ATX Mainboard for a single Socket AM4 Riven System. 2x PCIe x16 Connectors and 2x 1GBit Network Ports",
+        "price": 225
       }
     }
   },
   "cpu": {
     "displayName": "CPUs",
-    "icon": 1367,
+    "icon": "1367",
     "items": {
       "1": {
-        "name": "SuperCPU1000",
-        "description": "Great CPU, Type 1000"
+        "displayName": "BMD Epix 1335",
+        "description": "24-Core 2.35GHz CPU with a TDP of 105W \rUses the SP3 Socket",
+        "price": 350
+      },
+      "2": {
+        "displayName": "BMD Epix 1445",
+        "description": "32-Core 3.2GHz CPU with a TDP of 165W \rUses the SP3 Socket",
+        "price": 550
       }
     }
   },
   "ram": {
     "displayName": "RAM",
-    "icon": 1367,
+    "icon": "1367",
     "items": {
       "1": {
-        "name": "SuperRAM1000",
-        "description": "Great RAM, Type 1000"
+        "displayName": "Generix 32GB DDR4-3200 ECC",
+        "description": "A single stick of 32GB ECC RAM, cheap but delivers good performance",
+        "price": 75
       }
     }
   },
   "psu": {
     "displayName": "Power Supplies",
-    "icon": 1367,
+    "icon": "1367",
     "items": {
       "1": {
-        "name": "SuperPSU1000",
-        "description": "Great PSU, Type 1000"
+        "displayName": "SuperPSU1000",
+        "description": "Great PSU, Type 1000",
+        "price": 1000
       }
     }
   },
   "ssd": {
     "displayName": "SSDs",
-    "icon": 1367,
+    "icon": "1367",
     "items": {
       "1": {
-        "name": "SuperSSD1000",
-        "description": "Great SSD, Type 1000"
+        "displayName": "SungSung 1.96TB",
+        "description": "Perfect Read/Write Speeds. \rVery high durability",
+        "price": 180
       }
     }
   },
   "hdd": {
     "displayName": "HDDs",
-    "icon": 1367,
+    "icon": "1367",
     "items": {
       "1": {
-        "name": "SuperHDD1000",
-        "description": "Great HDD, Type 1000"
+        "displayName": "SuperHDD1000",
+        "description": "Great HDD, Type 1000",
+        "price": 1000
       }
     }
   }

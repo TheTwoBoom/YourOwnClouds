@@ -1,0 +1,11 @@
+{
+  "level": 0,
+  "activeCustomers": {
+    "1": {
+      "displayName": "WeirdGuy",
+      "supportType": "weird",
+      "products": null,
+    }
+  },
+  "inventory": {},
+}

@@ -6,4 +6,6 @@ global.emails = json_parse(emails_raw);
 var product_buffer = buffer_load(working_directory + "products.json");
 var products_raw = buffer_read(product_buffer, buffer_string);
 buffer_delete(product_buffer);
-global.products = json_parse(products_raw);
+global.shopdata = json_parse(products_raw);
+
+loadSave();
