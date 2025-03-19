@@ -1,10 +1,26 @@
 {
   "level": 0,
+  "money": 1000,
   "activeCustomers": {
     "1": {
       "displayName": "WeirdGuy",
+      "avatar": "weirdGuy",
       "supportType": "weird",
       "products": null,
+    }
+  },
+  "availableLocations": {
+    "1": {
+      "displayName": "Basement",
+      "size": "small",
+      "connections": {
+        "1": {
+          "type": "isp",
+          "sla": "none",
+          "speed": "1000",
+          "speedUnit": "MBit"
+        }
+      }
     }
   },
   "inventory": {},

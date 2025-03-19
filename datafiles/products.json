@@ -26,12 +26,12 @@
     "items": {
       "1": {
         "displayName": "GreatCom 1S-SP3",
-        "description": "Simple E-ATX Mainboard for a single Socket SP3 BMD Epix System. 6x PCIe x16 Connectors and 2x 10GBit Network Ports",
+        "description": "Simple E-ATX Mainboard for a single Socket SP3 BMD Epix System. 6x PCIe x16 and 2x 10GBit Network Ports",
         "price": 450
       },
       "2": {
         "displayName": "GreatCom 1S-AM4",
-        "description": "Simple ATX Mainboard for a single Socket AM4 Riven System. 2x PCIe x16 Connectors and 2x 1GBit Network Ports",
+        "description": "Simple ATX Mainboard for a single Socket AM4 Riven System. 2x PCIe x16 and 2x 1GBit Network Ports",
         "price": 225
       }
     }
@@ -57,9 +57,14 @@
     "icon": "1367",
     "items": {
       "1": {
-        "displayName": "Generix 32GB DDR4-3200 ECC",
-        "description": "A single stick of 32GB ECC RAM, cheap but delivers good performance",
+        "displayName": "Generix 32GB DDR4",
+        "description": "A single stick of 32GB DDR4-2666 ECC RAM, cheap but delivers good performance",
         "price": 75
+      },
+      "2": {
+        "displayName": "Generix 64GB DDR4",
+        "description": "A single stick of 64GB DDR4-2666 ECC RAM, cheap but delivers good performance",
+        "price": 165
       }
     }
   },
@@ -90,9 +95,9 @@
     "icon": "1367",
     "items": {
       "1": {
-        "displayName": "SuperHDD1000",
-        "description": "Great HDD, Type 1000",
-        "price": 1000
+        "displayName": "Brrr Enterprise 16TB",
+        "description": "Makes BRRRR, and is slow as hell\rIs also very cheap per TB",
+        "price": 250
       }
     }
   }

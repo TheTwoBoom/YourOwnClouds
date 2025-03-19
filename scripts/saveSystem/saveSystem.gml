@@ -1,8 +1,8 @@
 function loadSave(){
     if (file_exists(game_save_id + "/save.json")) {
-        var save_buffer = buffer_load(game_save_id + "/save.json");
+        save_buffer = buffer_load(game_save_id + "/save.json");
     } else {
-        var save_buffer = buffer_load(working_directory + "save.json");
+        save_buffer = buffer_load(working_directory + "save.json");
     }
     var save_raw = buffer_read(save_buffer, buffer_string);
     buffer_delete(save_buffer);

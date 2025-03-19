@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"mouseLeftHandlerDesktop",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"mouseLeftHandlerDesktop",
+  "parent":{
+    "name":"Skripte",
+    "path":"folders/Skripte.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
