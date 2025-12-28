@@ -1,0 +1,3288 @@
+[gd_scene load_steps=86 format=4 uid="uid://cyt55slp7ccdn"]
+
+[ext_resource type="Script" uid="uid://c3j2cnfj3lyso" path="res://scripts/ui_manager.gd" id="1_70x1r"]
+[ext_resource type="Texture2D" uid="uid://dn4ewgelm1igb" path="res://assets/Room_Builder_Office_48x48.png" id="1_g3mwp"]
+[ext_resource type="PackedScene" uid="uid://kwxmys28ykbq" path="res://player.tscn" id="2_ei2s5"]
+[ext_resource type="Texture2D" uid="uid://chriql5y62jp7" path="res://assets/Modern_Office_48x48.png" id="2_u8nhc"]
+[ext_resource type="Script" uid="uid://cxgaryxqybt0g" path="res://scripts/button_area.gd" id="4_43ocd"]
+[ext_resource type="Texture2D" uid="uid://c7axykdwxo6m6" path="res://assets/Modern_UI_Style_1_48x48.png" id="5_hsito"]
+[ext_resource type="Theme" uid="uid://bgihxlm45a5q2" path="res://main_theme.tres" id="5_lcwox"]
+[ext_resource type="LabelSettings" uid="uid://blk4bs5ym0o7x" path="res://UITitleLabel.tres" id="6_lcnwv"]
+[ext_resource type="LabelSettings" uid="uid://d1ffyw6sm46vd" path="res://UI-40px-Label.tres" id="7_4i814"]
+[ext_resource type="Texture2D" uid="uid://b7wtkictesp0d" path="res://assets/player.png" id="7_gxl1f"]
+[ext_resource type="Script" uid="uid://p7wwlr4sgw7d" path="res://scripts/desktop_buttons.gd" id="8_knsl5"]
+[ext_resource type="Script" uid="uid://cngrbxcrqed8j" path="res://scripts/close_button.gd" id="8_s0aar"]
+[ext_resource type="FontFile" uid="uid://h5lhoy8ttlqj" path="res://assets/Geo-Regular.ttf" id="8_wruqr"]
+[ext_resource type="Script" uid="uid://typj5ixjmrx4" path="res://scripts/back_button.gd" id="10_3xqf3"]
+[ext_resource type="PackedScene" uid="uid://bsnqn5ymyqsky" path="res://tutorial_content.tscn" id="11_2uru3"]
+[ext_resource type="Script" uid="uid://dyi3c5c65llyu" path="res://scripts/email_content.gd" id="15_n1y4y"]
+[ext_resource type="Script" uid="uid://d4lxovgo8lium" path="res://scripts/shop_content.gd" id="16_m8tx5"]
+[ext_resource type="Script" uid="uid://pxtkn7h00ikk" path="res://scripts/shop_item_content.gd" id="17_8qan1"]
+[ext_resource type="Script" uid="uid://bnsbtvvq582fl" path="res://scripts/back_button_popup.gd" id="17_m8tx5"]
+[ext_resource type="Script" uid="uid://cfjgt6mcqq4k8" path="res://scripts/offer_content.gd" id="18_4hetp"]
+[ext_resource type="PackedScene" uid="uid://chfwqdihy0aio" path="res://server_shelf_2d.tscn" id="18_25m5p"]
+[ext_resource type="Script" uid="uid://cke7ko61lqgpx" path="res://scripts/datacenters_content.gd" id="18_bm8iy"]
+[ext_resource type="Script" uid="uid://dg3ayrvt45mnb" path="res://scripts/server_shelf_gui.gd" id="19_2k2f6"]
+[ext_resource type="Script" uid="uid://dfuyf4nojmeau" path="res://scripts/server_shelfs_office.gd" id="19_bm8iy"]
+[ext_resource type="Script" uid="uid://3ng5krre48bc" path="res://scripts/server_shelf_2d.gd" id="19_ga26y"]
+[ext_resource type="Texture2D" uid="uid://pr4xpoisn2cn" path="res://assets/feedback_icons/false.tres" id="19_o3cd7"]
+[ext_resource type="Script" uid="uid://culwfgoiyqurq" path="res://scripts/clock.gd" id="23_ga26y"]
+[ext_resource type="Script" uid="uid://bl8ogx10jh3dn" path="res://scripts/customers_content.gd" id="24_nl0r1"]
+[ext_resource type="PackedScene" uid="uid://dk3gc6ror77cy" path="res://template_customer.tscn" id="25_26ul0"]
+[ext_resource type="Script" uid="uid://d1g1svylnskwj" path="res://scripts/inventory_content.gd" id="26_26ul0"]
+[ext_resource type="Script" uid="uid://yo66aesnv4xd" path="res://scripts/inventory_device_content.gd" id="27_5bs7n"]
+[ext_resource type="Script" uid="uid://be7fc21wxus1" path="res://scripts/inventory_component_content.gd" id="28_cu40l"]
+[ext_resource type="Script" uid="uid://cew23vvhuu7e4" path="res://scripts/skip_day.gd" id="28_ekubs"]
+[ext_resource type="Script" uid="uid://p13eikw05lx0" path="res://scripts/tutorial_checklist.gd" id="29_bveom"]
+[ext_resource type="Texture2D" uid="uid://dfre3q6nr8mmk" path="res://assets/checkboxes/checked.tres" id="30_6jtqa"]
+[ext_resource type="Texture2D" uid="uid://cr1y10p7ee1dw" path="res://assets/checkboxes/non-checked.tres" id="31_nl0r1"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8qan1"]
+texture = ExtResource("1_g3mwp")
+texture_region_size = Vector2i(48, 48)
+15:12/0 = 0
+14:12/0 = 0
+14:11/0 = 0
+13:11/0 = 0
+12:11/0 = 0
+11:10/0 = 0
+10:10/0 = 0
+9:10/0 = 0
+9:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:9/0 = 0
+9:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+12:10/0 = 0
+13:12/0 = 0
+0:0/0 = 0
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -5.64474, -24, -6.20921)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -5.64474, -24, -6.20921)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.25789, -24, 24, -24, 24, 24, 1.69342, 24)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -3.95132, -24, -4.51579)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, 4.51579, 24, 2.82237, -5.08027, -24, -5.08027)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, -24, 24, -1.12895, 24, -1.12895, -5.08027, 24, -5.08027, 24, -24)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.25789, -24, 24, -24, 24, 24, 1.69342, 24)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -3.95132, -24, -4.51579)
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, -2.2579, -24, -1.69342, 24, -24, 24)
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+12:2/0 = 0
+12:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+12:3/0 = 0
+12:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+13:3/0 = 0
+14:3/0 = 0
+15:2/0 = 0
+15:1/0 = 0
+15:0/0 = 0
+14:0/0 = 0
+13:0/0 = 0
+12:0/0 = 0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:0/0 = 0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:0/0 = 0
+7:0/0 = 0
+6:0/0 = 0
+5:0/0 = 0
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, -2.2579, -24, -1.69342, 24, -24, 24)
+0:1/0 = 0
+0:2/0 = 0
+0:3/0 = 0
+0:4/0 = 0
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:6/0 = 0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:7/0 = 0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:8/0 = 0
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:9/0 = 0
+0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:10/0 = 0
+0:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:11/0 = 0
+0:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:12/0 = 0
+0:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:13/0 = 0
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -5.08027, -24, -4.51579)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, 4.51579, 24, 2.82237, -5.08027, -24, -5.08027)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, 4.51579, 24, 2.82237, -5.08027, -24, -5.08027)
+1:4/0 = 0
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:6/0 = 0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:7/0 = 0
+1:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:8/0 = 0
+1:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:9/0 = 0
+1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:10/0 = 0
+1:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:11/0 = 0
+1:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:12/0 = 0
+1:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:13/0 = 0
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -5.08027, -24, -4.51579)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, -24, 24, -1.12895, 24, -1.12895, -5.08027, 24, -5.08027, 24, -24)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, -24, 24, -1.12895, 24, -1.12895, -5.08027, 24, -5.08027, 24, -24)
+2:4/0 = 0
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:7/0 = 0
+2:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:8/0 = 0
+2:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:9/0 = 0
+2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:10/0 = 0
+2:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:11/0 = 0
+2:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:12/0 = 0
+2:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:13/0 = 0
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -5.08027, -24, -4.51579)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, -24, 24, -1.12895, 24, -1.12895, -5.08027, 24, -5.08027, 24, -24)
+3:4/0 = 0
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:7/0 = 0
+3:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:8/0 = 0
+3:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:9/0 = 0
+3:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:10/0 = 0
+3:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:11/0 = 0
+3:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:12/0 = 0
+3:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:13/0 = 0
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, 4.51579, 24, 2.82237, -5.08027, -24, -5.08027)
+4:4/0 = 0
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:6/0 = 0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:7/0 = 0
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:8/0 = 0
+4:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:9/0 = 0
+4:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:10/0 = 0
+4:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:11/0 = 0
+4:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:12/0 = 0
+4:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:13/0 = 0
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -3.38684, -24, -4.51579)
+5:4/0 = 0
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:6/0 = 0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:7/0 = 0
+5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:8/0 = 0
+5:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:9/0 = 0
+5:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:10/0 = 0
+5:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:11/0 = 0
+5:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:12/0 = 0
+5:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:13/0 = 0
+6:2/0 = 0
+6:3/0 = 0
+6:4/0 = 0
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:6/0 = 0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:7/0 = 0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:8/0 = 0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:9/0 = 0
+6:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:10/0 = 0
+6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:11/0 = 0
+6:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:12/0 = 0
+6:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:13/0 = 0
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.25789, -24, 24, -24, 24, 24, 1.69342, 24)
+7:3/0 = 0
+7:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(3.38684, -24, 24, -24, 24, -3.95132, 3.38684, -3.95132)
+7:4/0 = 0
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:6/0 = 0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:7/0 = 0
+7:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:8/0 = 0
+7:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:9/0 = 0
+7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:10/0 = 0
+7:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:11/0 = 0
+7:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:12/0 = 0
+7:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:13/0 = 0
+8:2/0 = 0
+8:3/0 = 0
+8:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -5.64474, -24, -5.08027)
+8:4/0 = 0
+8:5/0 = 0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:6/0 = 0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:7/0 = 0
+8:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:8/0 = 0
+8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:9/0 = 0
+8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:10/0 = 0
+8:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:11/0 = 0
+8:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:12/0 = 0
+8:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:13/0 = 0
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, -2.2579, -24, -1.69342, 24, -24, 24)
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, -2.82237, -24, -2.82237, -4.51579, -24, -3.95132)
+9:4/0 = 0
+9:5/0 = 0
+9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:6/0 = 0
+9:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:7/0 = 0
+9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:8/0 = 0
+9:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:11/0 = 0
+9:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:12/0 = 0
+9:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:13/0 = 0
+10:1/0 = 0
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+10:4/0 = 0
+10:5/0 = 0
+10:6/0 = 0
+10:7/0 = 0
+10:8/0 = 0
+10:9/0 = 0
+10:11/0 = 0
+10:12/0 = 0
+10:13/0 = 0
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:3/0 = 0
+11:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:4/0 = 0
+11:5/0 = 0
+11:6/0 = 0
+11:7/0 = 0
+11:8/0 = 0
+11:9/0 = 0
+11:11/0 = 0
+11:12/0 = 0
+11:13/0 = 0
+12:1/0 = 0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+12:4/0 = 0
+12:5/0 = 0
+12:6/0 = 0
+12:7/0 = 0
+12:8/0 = 0
+12:9/0 = 0
+12:12/0 = 0
+12:13/0 = 0
+13:1/0 = 0
+13:2/0 = 0
+13:4/0 = 0
+13:5/0 = 0
+13:6/0 = 0
+13:7/0 = 0
+13:8/0 = 0
+13:9/0 = 0
+13:10/0 = 0
+13:13/0 = 0
+14:1/0 = 0
+14:2/0 = 0
+14:4/0 = 0
+14:5/0 = 0
+14:6/0 = 0
+14:7/0 = 0
+14:8/0 = 0
+14:9/0 = 0
+14:10/0 = 0
+14:13/0 = 0
+15:4/0 = 0
+15:5/0 = 0
+15:6/0 = 0
+15:7/0 = 0
+15:8/0 = 0
+15:9/0 = 0
+15:10/0 = 0
+15:11/0 = 0
+15:13/0 = 0
+15:3/0 = 0
+8:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_u8nhc"]
+tile_size = Vector2i(48, 48)
+physics_layer_0/collision_layer = 1
+sources/1 = SubResource("TileSetAtlasSource_8qan1")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jktts"]
+texture = ExtResource("2_u8nhc")
+texture_region_size = Vector2i(48, 48)
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:3/0 = 0
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:3/0 = 0
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:3/0 = 0
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:2/0 = 0
+9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:3/0 = 0
+9:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+10:2/0 = 0
+10:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+10:3/0 = 0
+10:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:0/0 = 0
+11:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+11:1/0 = 0
+11:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:2/0 = 0
+11:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:3/0 = 0
+12:0/0 = 0
+12:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+12:1/0 = 0
+12:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+12:2/0 = 0
+12:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+12:3/0 = 0
+13:0/0 = 0
+13:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+13:1/0 = 0
+13:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+13:2/0 = 0
+13:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+13:3/0 = 0
+14:0/0 = 0
+14:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+14:1/0 = 0
+14:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+14:2/0 = 0
+14:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+14:3/0 = 0
+14:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+15:0/0 = 0
+15:1/0 = 0
+15:2/0 = 0
+15:3/0 = 0
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:3/0 = 0
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:3/0 = 0
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:3/0 = 0
+4:0/0 = 0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+4:1/0 = 0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:2/0 = 0
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:3/0 = 0
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:0/0 = 0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+5:1/0 = 0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:2/0 = 0
+5:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:3/0 = 0
+5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:4/0 = 0
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+0:5/0 = 0
+0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:6/0 = 0
+0:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:7/0 = 0
+0:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 13.5474, -24, 12.9829)
+0:8/0 = 0
+0:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:9/0 = 0
+0:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:10/0 = 0
+0:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:11/0 = 0
+0:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+0:12/0 = 0
+0:13/0 = 0
+0:14/0 = 0
+0:15/0 = 0
+0:16/0 = 0
+0:17/0 = 0
+1:4/0 = 0
+1:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+1:5/0 = 0
+1:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:6/0 = 0
+1:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:7/0 = 0
+1:8/0 = 0
+1:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:9/0 = 0
+1:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:10/0 = 0
+1:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:11/0 = 0
+1:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+1:12/0 = 0
+1:13/0 = 0
+1:14/0 = 0
+1:15/0 = 0
+1:16/0 = 0
+1:17/0 = 0
+2:4/0 = 0
+2:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+2:5/0 = 0
+2:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:6/0 = 0
+2:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:7/0 = 0
+2:8/0 = 0
+2:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:9/0 = 0
+2:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:10/0 = 0
+2:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:11/0 = 0
+2:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+2:12/0 = 0
+2:13/0 = 0
+2:14/0 = 0
+2:15/0 = 0
+2:16/0 = 0
+2:17/0 = 0
+3:4/0 = 0
+3:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+3:5/0 = 0
+3:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:6/0 = 0
+3:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:7/0 = 0
+3:8/0 = 0
+3:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:9/0 = 0
+3:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:10/0 = 0
+3:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:11/0 = 0
+3:11/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+3:12/0 = 0
+3:13/0 = 0
+3:14/0 = 0
+3:15/0 = 0
+3:16/0 = 0
+3:17/0 = 0
+4:4/0 = 0
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+4:5/0 = 0
+4:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:6/0 = 0
+4:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:7/0 = 0
+4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 13.5474, -24, 12.9829)
+4:8/0 = 0
+4:9/0 = 0
+4:10/0 = 0
+4:11/0 = 0
+4:12/0 = 0
+4:13/0 = 0
+4:14/0 = 0
+4:15/0 = 0
+4:16/0 = 0
+4:17/0 = 0
+5:4/0 = 0
+5:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+5:5/0 = 0
+5:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:6/0 = 0
+5:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:7/0 = 0
+5:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 13.5474, -24, 12.9829)
+5:8/0 = 0
+5:9/0 = 0
+5:10/0 = 0
+5:11/0 = 0
+5:12/0 = 0
+5:13/0 = 0
+5:14/0 = 0
+5:15/0 = 0
+5:16/0 = 0
+5:17/0 = 0
+6:4/0 = 0
+6:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+6:5/0 = 0
+6:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:6/0 = 0
+6:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:7/0 = 0
+6:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 5.08027, 24, 4.51579, 24, 24, -24, 24)
+6:8/0 = 0
+6:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:9/0 = 0
+6:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, -2.2579, -24, -1.69342)
+6:10/0 = 0
+6:11/0 = 0
+6:12/0 = 0
+6:13/0 = 0
+6:14/0 = 0
+6:15/0 = 0
+6:16/0 = 0
+6:17/0 = 0
+7:4/0 = 0
+7:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+7:5/0 = 0
+7:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:6/0 = 0
+7:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+7:7/0 = 0
+7:8/0 = 0
+7:9/0 = 0
+7:10/0 = 0
+7:11/0 = 0
+7:12/0 = 0
+7:13/0 = 0
+7:14/0 = 0
+7:15/0 = 0
+7:16/0 = 0
+7:17/0 = 0
+8:4/0 = 0
+8:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+8:5/0 = 0
+8:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:6/0 = 0
+8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+8:7/0 = 0
+8:8/0 = 0
+8:9/0 = 0
+8:10/0 = 0
+8:11/0 = 0
+8:12/0 = 0
+8:13/0 = 0
+8:14/0 = 0
+8:15/0 = 0
+8:16/0 = 0
+8:17/0 = 0
+9:4/0 = 0
+9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 1.12895, 24, 2.2579, 24, 24, -24, 24)
+9:5/0 = 0
+9:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:6/0 = 0
+9:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:7/0 = 0
+9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 13.5474, -24, 12.9829)
+9:8/0 = 0
+9:9/0 = 0
+9:10/0 = 0
+9:11/0 = 0
+9:12/0 = 0
+9:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 0, 24, 1.12895, 24, 24, -24, 24)
+9:13/0 = 0
+9:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+9:14/0 = 0
+9:15/0 = 0
+9:16/0 = 0
+9:17/0 = 0
+10:4/0 = 0
+10:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+10:5/0 = 0
+10:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+10:7/0 = 0
+10:8/0 = 0
+10:9/0 = 0
+10:10/0 = 0
+10:11/0 = 0
+10:12/0 = 0
+10:12/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, 0, 24, 0.564474, 24, 24, -24, 24)
+10:13/0 = 0
+10:13/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+10:14/0 = 0
+10:15/0 = 0
+10:16/0 = 0
+10:17/0 = 0
+11:4/0 = 0
+11:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:5/0 = 0
+11:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+11:7/0 = 0
+11:8/0 = 0
+11:9/0 = 0
+11:10/0 = 0
+11:11/0 = 0
+11:12/0 = 0
+11:13/0 = 0
+11:14/0 = 0
+11:15/0 = 0
+11:16/0 = 0
+11:17/0 = 0
+12:4/0 = 0
+12:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+12:5/0 = 0
+12:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+12:8/0 = 0
+12:9/0 = 0
+12:10/0 = 0
+12:11/0 = 0
+12:12/0 = 0
+12:13/0 = 0
+12:14/0 = 0
+12:15/0 = 0
+12:16/0 = 0
+12:17/0 = 0
+13:4/0 = 0
+13:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+13:5/0 = 0
+13:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+13:8/0 = 0
+13:9/0 = 0
+13:10/0 = 0
+13:11/0 = 0
+13:12/0 = 0
+13:13/0 = 0
+13:14/0 = 0
+13:15/0 = 0
+13:16/0 = 0
+13:17/0 = 0
+14:4/0 = 0
+14:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+14:5/0 = 0
+14:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+14:8/0 = 0
+14:9/0 = 0
+14:10/0 = 0
+14:11/0 = 0
+14:12/0 = 0
+14:13/0 = 0
+14:14/0 = 0
+14:15/0 = 0
+14:16/0 = 0
+14:17/0 = 0
+15:8/0 = 0
+15:9/0 = 0
+15:10/0 = 0
+15:11/0 = 0
+15:12/0 = 0
+15:13/0 = 0
+15:14/0 = 0
+15:15/0 = 0
+15:16/0 = 0
+15:17/0 = 0
+0:18/0 = 0
+0:19/0 = 0
+0:20/0 = 0
+0:21/0 = 0
+0:22/0 = 0
+0:23/0 = 0
+0:24/0 = 0
+0:25/0 = 0
+0:26/0 = 0
+0:27/0 = 0
+0:28/0 = 0
+1:18/0 = 0
+1:19/0 = 0
+1:20/0 = 0
+1:21/0 = 0
+1:22/0 = 0
+1:23/0 = 0
+1:24/0 = 0
+1:25/0 = 0
+1:26/0 = 0
+1:27/0 = 0
+1:28/0 = 0
+2:18/0 = 0
+2:19/0 = 0
+2:20/0 = 0
+2:21/0 = 0
+2:22/0 = 0
+2:23/0 = 0
+2:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.33816, -7.90263, 24, -9.03158, 24, 24, -8.46711, 24)
+2:24/0 = 0
+2:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10.725, -24, 24, -24, 24, 24, -9.59606, 24)
+2:25/0 = 0
+2:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.90264, -24, 24, -24, 24, -3.38684, -7.90264, -3.95132)
+2:26/0 = 0
+2:27/0 = 0
+2:28/0 = 0
+3:18/0 = 0
+3:19/0 = 0
+3:20/0 = 0
+3:21/0 = 0
+3:22/0 = 0
+3:23/0 = 0
+3:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -10.1605, 9.03158, -9.03158, 9.59606, 24, -24, 24)
+3:24/0 = 0
+3:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 9.03158, -24, 9.59606, 24, -24, 24)
+3:25/0 = 0
+3:25/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 11.2895, -24, 11.8539, -1.12895, -24, -1.12895)
+3:26/0 = 0
+3:27/0 = 0
+3:28/0 = 0
+4:18/0 = 0
+4:19/0 = 0
+4:20/0 = 0
+4:21/0 = 0
+4:22/0 = 0
+4:23/0 = 0
+4:24/0 = 0
+4:25/0 = 0
+4:26/0 = 0
+4:27/0 = 0
+4:28/0 = 0
+5:18/0 = 0
+5:19/0 = 0
+5:20/0 = 0
+5:21/0 = 0
+5:22/0 = 0
+5:23/0 = 0
+5:24/0 = 0
+5:25/0 = 0
+5:26/0 = 0
+5:27/0 = 0
+5:28/0 = 0
+6:18/0 = 0
+6:19/0 = 0
+6:20/0 = 0
+6:21/0 = 0
+6:22/0 = 0
+6:23/0 = 0
+6:24/0 = 0
+6:25/0 = 0
+6:26/0 = 0
+6:27/0 = 0
+6:28/0 = 0
+7:18/0 = 0
+7:19/0 = 0
+7:20/0 = 0
+7:21/0 = 0
+7:22/0 = 0
+7:23/0 = 0
+7:24/0 = 0
+7:25/0 = 0
+7:26/0 = 0
+7:27/0 = 0
+7:28/0 = 0
+8:18/0 = 0
+8:19/0 = 0
+8:20/0 = 0
+8:21/0 = 0
+8:22/0 = 0
+8:23/0 = 0
+8:24/0 = 0
+8:25/0 = 0
+8:26/0 = 0
+8:27/0 = 0
+8:28/0 = 0
+9:18/0 = 0
+9:19/0 = 0
+9:20/0 = 0
+9:21/0 = 0
+9:22/0 = 0
+9:23/0 = 0
+9:24/0 = 0
+9:25/0 = 0
+9:26/0 = 0
+9:27/0 = 0
+9:28/0 = 0
+10:18/0 = 0
+10:19/0 = 0
+10:20/0 = 0
+10:21/0 = 0
+10:22/0 = 0
+10:23/0 = 0
+10:24/0 = 0
+10:25/0 = 0
+10:26/0 = 0
+10:27/0 = 0
+10:28/0 = 0
+11:18/0 = 0
+11:19/0 = 0
+11:20/0 = 0
+11:21/0 = 0
+11:22/0 = 0
+11:23/0 = 0
+11:24/0 = 0
+11:26/0 = 0
+11:27/0 = 0
+11:28/0 = 0
+12:18/0 = 0
+12:19/0 = 0
+12:20/0 = 0
+12:21/0 = 0
+12:22/0 = 0
+12:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(7.90263, -24, 24, -24, 24, 24, 7.90263, 24)
+12:23/0 = 0
+12:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(7.90263, -24, 24, -24, 24, 24, 7.90263, 24)
+12:24/0 = 0
+12:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(5.64474, -24, 24, -24, 24, 10.725, 5.08027, 10.1605)
+12:26/0 = 0
+12:27/0 = 0
+12:28/0 = 0
+13:18/0 = 0
+13:19/0 = 0
+13:20/0 = 0
+13:21/0 = 0
+13:22/0 = 0
+13:22/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+13:23/0 = 0
+13:23/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+13:24/0 = 0
+13:24/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 10.725, -24, 10.1605)
+13:26/0 = 0
+13:27/0 = 0
+13:28/0 = 0
+14:18/0 = 0
+14:19/0 = 0
+14:20/0 = 0
+14:21/0 = 0
+14:22/0 = 0
+14:23/0 = 0
+14:24/0 = 0
+14:26/0 = 0
+14:27/0 = 0
+14:28/0 = 0
+15:18/0 = 0
+15:19/0 = 0
+15:20/0 = 0
+15:21/0 = 0
+15:22/0 = 0
+15:23/0 = 0
+15:24/0 = 0
+15:26/0 = 0
+15:27/0 = 0
+15:28/0 = 0
+0:34/0 = 0
+0:35/0 = 0
+0:36/0 = 0
+0:37/0 = 0
+0:38/0 = 0
+1:30/0 = 0
+1:31/0 = 0
+1:34/0 = 0
+1:35/0 = 0
+1:36/0 = 0
+1:37/0 = 0
+1:38/0 = 0
+2:30/0 = 0
+2:31/0 = 0
+2:34/0 = 0
+2:35/0 = 0
+2:36/0 = 0
+2:37/0 = 0
+2:38/0 = 0
+3:30/0 = 0
+3:31/0 = 0
+3:34/0 = 0
+3:35/0 = 0
+3:36/0 = 0
+3:37/0 = 0
+3:38/0 = 0
+4:30/0 = 0
+4:30/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:31/0 = 0
+4:31/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+4:34/0 = 0
+4:35/0 = 0
+4:36/0 = 0
+4:37/0 = 0
+4:38/0 = 0
+5:30/0 = 0
+5:30/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:31/0 = 0
+5:31/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+5:34/0 = 0
+5:35/0 = 0
+5:36/0 = 0
+5:37/0 = 0
+5:38/0 = 0
+6:30/0 = 0
+6:30/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:31/0 = 0
+6:31/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
+6:34/0 = 0
+6:35/0 = 0
+6:36/0 = 0
+6:37/0 = 0
+6:38/0 = 0
+7:29/0 = 0
+7:30/0 = 0
+7:31/0 = 0
+7:34/0 = 0
+7:35/0 = 0
+7:36/0 = 0
+7:37/0 = 0
+7:38/0 = 0
+8:29/0 = 0
+8:30/0 = 0
+8:31/0 = 0
+8:34/0 = 0
+8:35/0 = 0
+8:36/0 = 0
+8:37/0 = 0
+8:38/0 = 0
+9:29/0 = 0
+9:30/0 = 0
+9:31/0 = 0
+9:34/0 = 0
+9:35/0 = 0
+9:36/0 = 0
+9:37/0 = 0
+9:38/0 = 0
+10:29/0 = 0
+10:30/0 = 0
+10:31/0 = 0
+10:32/0 = 0
+10:33/0 = 0
+10:34/0 = 0
+10:35/0 = 0
+10:36/0 = 0
+10:37/0 = 0
+10:38/0 = 0
+11:29/0 = 0
+11:30/0 = 0
+11:31/0 = 0
+11:32/0 = 0
+11:33/0 = 0
+11:34/0 = 0
+11:35/0 = 0
+11:36/0 = 0
+11:37/0 = 0
+11:38/0 = 0
+12:29/0 = 0
+12:30/0 = 0
+12:31/0 = 0
+12:32/0 = 0
+12:33/0 = 0
+12:34/0 = 0
+12:35/0 = 0
+12:36/0 = 0
+12:37/0 = 0
+12:38/0 = 0
+13:29/0 = 0
+13:30/0 = 0
+13:31/0 = 0
+13:32/0 = 0
+13:33/0 = 0
+13:34/0 = 0
+13:35/0 = 0
+13:36/0 = 0
+13:37/0 = 0
+13:38/0 = 0
+14:29/0 = 0
+14:30/0 = 0
+14:31/0 = 0
+14:32/0 = 0
+14:33/0 = 0
+14:34/0 = 0
+14:35/0 = 0
+15:29/0 = 0
+15:30/0 = 0
+15:31/0 = 0
+15:32/0 = 0
+15:33/0 = 0
+15:34/0 = 0
+15:35/0 = 0
+15:38/0 = 0
+0:39/0 = 0
+0:40/0 = 0
+0:41/0 = 0
+0:42/0 = 0
+0:43/0 = 0
+0:44/0 = 0
+0:45/0 = 0
+0:46/0 = 0
+0:47/0 = 0
+0:48/0 = 0
+1:39/0 = 0
+1:40/0 = 0
+1:41/0 = 0
+1:42/0 = 0
+1:43/0 = 0
+1:44/0 = 0
+1:45/0 = 0
+1:46/0 = 0
+1:47/0 = 0
+1:48/0 = 0
+2:39/0 = 0
+2:40/0 = 0
+2:41/0 = 0
+2:42/0 = 0
+2:43/0 = 0
+2:44/0 = 0
+2:45/0 = 0
+2:46/0 = 0
+2:47/0 = 0
+2:48/0 = 0
+3:39/0 = 0
+3:40/0 = 0
+3:41/0 = 0
+3:42/0 = 0
+3:43/0 = 0
+3:44/0 = 0
+3:45/0 = 0
+3:46/0 = 0
+3:47/0 = 0
+3:48/0 = 0
+4:39/0 = 0
+4:40/0 = 0
+4:41/0 = 0
+4:42/0 = 0
+4:43/0 = 0
+4:44/0 = 0
+4:45/0 = 0
+4:46/0 = 0
+4:47/0 = 0
+4:48/0 = 0
+5:39/0 = 0
+5:40/0 = 0
+5:41/0 = 0
+5:42/0 = 0
+5:43/0 = 0
+5:44/0 = 0
+5:45/0 = 0
+5:46/0 = 0
+5:47/0 = 0
+5:48/0 = 0
+6:39/0 = 0
+6:40/0 = 0
+6:41/0 = 0
+6:42/0 = 0
+6:43/0 = 0
+6:44/0 = 0
+6:45/0 = 0
+6:46/0 = 0
+6:47/0 = 0
+6:48/0 = 0
+7:39/0 = 0
+7:40/0 = 0
+7:41/0 = 0
+7:42/0 = 0
+7:43/0 = 0
+7:44/0 = 0
+7:45/0 = 0
+7:46/0 = 0
+7:47/0 = 0
+7:48/0 = 0
+8:39/0 = 0
+8:40/0 = 0
+8:41/0 = 0
+8:42/0 = 0
+8:43/0 = 0
+8:44/0 = 0
+8:45/0 = 0
+8:46/0 = 0
+8:47/0 = 0
+8:48/0 = 0
+9:39/0 = 0
+9:40/0 = 0
+9:41/0 = 0
+9:42/0 = 0
+9:43/0 = 0
+9:44/0 = 0
+9:45/0 = 0
+9:46/0 = 0
+9:47/0 = 0
+9:48/0 = 0
+10:39/0 = 0
+10:40/0 = 0
+10:41/0 = 0
+10:42/0 = 0
+10:43/0 = 0
+10:44/0 = 0
+10:45/0 = 0
+10:46/0 = 0
+10:47/0 = 0
+10:48/0 = 0
+11:39/0 = 0
+11:40/0 = 0
+11:41/0 = 0
+11:42/0 = 0
+11:43/0 = 0
+11:44/0 = 0
+11:45/0 = 0
+11:46/0 = 0
+11:47/0 = 0
+11:48/0 = 0
+12:39/0 = 0
+12:40/0 = 0
+12:41/0 = 0
+12:42/0 = 0
+12:43/0 = 0
+12:44/0 = 0
+12:45/0 = 0
+12:46/0 = 0
+12:47/0 = 0
+12:48/0 = 0
+13:39/0 = 0
+13:40/0 = 0
+13:41/0 = 0
+13:42/0 = 0
+13:43/0 = 0
+13:44/0 = 0
+13:45/0 = 0
+13:46/0 = 0
+13:47/0 = 0
+13:48/0 = 0
+14:39/0 = 0
+14:40/0 = 0
+14:41/0 = 0
+14:42/0 = 0
+14:43/0 = 0
+15:39/0 = 0
+15:40/0 = 0
+15:41/0 = 0
+15:42/0 = 0
+15:43/0 = 0
+0:49/0 = 0
+0:50/0 = 0
+0:51/0 = 0
+0:52/0 = 0
+1:49/0 = 0
+1:50/0 = 0
+1:51/0 = 0
+1:52/0 = 0
+2:49/0 = 0
+2:50/0 = 0
+2:51/0 = 0
+2:52/0 = 0
+3:49/0 = 0
+3:50/0 = 0
+8:49/0 = 0
+8:50/0 = 0
+9:49/0 = 0
+9:50/0 = 0
+10:49/0 = 0
+10:50/0 = 0
+11:49/0 = 0
+11:50/0 = 0
+12:49/0 = 0
+12:50/0 = 0
+13:49/0 = 0
+13:50/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hsito"]
+tile_size = Vector2i(48, 48)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_jktts")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8qan1"]
+size = Vector2(96, 120)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hsito"]
+size = Vector2(160, 100)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hs4kw"]
+bg_color = Color(0, 0, 0, 0.64705884)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lcnwv"]
+size = Vector2(130, 130)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcnwv"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1200, 720, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4i814"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1152, 624, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wruqr"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1296, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lcwox"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1296, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3xqf3"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1296, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_70x1r"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1296, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_knsl5"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1392, 288, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s0aar"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1392, 288, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxl1f"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1392, 288, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2uxut"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1392, 288, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qan1"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1440, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jktts"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1440, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_25m5p"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1440, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ga26y"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1440, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n1y4y"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1344, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m8tx5"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1344, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hetp"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1344, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o3cd7"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1344, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bm8iy"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1248, 96, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2k2f6"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1296, 816, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bveom"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1296, 816, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6jtqa"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1296, 816, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nl0r1"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1296, 816, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_26ul0"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1536, 672, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bs7n"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1536, 672, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cu40l"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1536, 672, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qt548"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1536, 672, 48, 48)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_jktts"]
+size = Vector2(196, 40)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4360s"]
+atlas = ExtResource("5_hsito")
+region = Rect2(624, 1248, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a0t2l"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1392, 864, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xemgy"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1392, 864, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6veu"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1392, 864, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2prrh"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1392, 864, 48, 48)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qt548"]
+bg_color = Color(0, 0, 0, 0)
+border_width_top = 8
+border_color = Color(0.9529412, 0.9372549, 0.9019608, 1)
+anti_aliasing = false
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_cu40l"]
+size = Vector2(128, 128)
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4hetp"]
+size = Vector2(56, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5c3wu"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1152, 720, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g68bc"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1152, 720, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jtogi"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1152, 720, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1g0dp"]
+atlas = ExtResource("5_hsito")
+region = Rect2(1152, 720, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs4kw"]
+atlas = ExtResource("5_hsito")
+region = Rect2(624, 1248, 48, 52)
+
+[node name="Office" type="Node2D"]
+texture_filter = 1
+
+[node name="Clock" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 8.0
+autostart = true
+script = ExtResource("23_ga26y")
+
+[node name="UiManager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("1_70x1r")
+
+[node name="StructureTileMap" type="TileMapLayer" parent="."]
+texture_filter = 1
+tile_map_data = PackedByteArray("AAASAAYAAQABAAkAAAASAAcAAQABAAoAAAATAAYAAQABAAkAAAATAAcAAQABAAoAAAAUAAYAAQABAAkAAAAUAAcAAQABAAoAAAAVAAYAAQABAAkAAAAVAAcAAQABAAoAAAAWAAYAAQABAAkAAAAWAAcAAQABAAoAAAAXAAYAAQABAAkAAAAXAAcAAQABAAoAAAAYAAYAAQABAAkAAAAYAAcAAQABAAoAAAAZAAYAAQABAAkAAAAZAAcAAQABAAoAAAAaAAYAAQABAAkAAAAaAAcAAQABAAoAAAAbAAYAAQABAAkAAAAbAAcAAQABAAoAAAAcAAYAAQAJAAEAAAAcAAcAAQAJAAIAAAAcAAgAAQAJAAIAAAAcAAkAAQAJAAIAAAAcAAoAAQAJAAIAAAAcAAsAAQAJAAIAAAAcAAwAAQAJAAIAAAAcAA0AAQAJAAIAAAAcAA4AAQAJAAIAAAASAA8AAQAIAAMAAAATAA8AAQAIAAMAAAAUAA8AAQAIAAMAAAAVAA8AAQAIAAMAAAAWAA8AAQAIAAMAAAAXAA8AAQAIAAMAAAAYAA8AAQAIAAMAAAAZAA8AAQAIAAMAAAAaAA8AAQAIAAEAAAAbAA8AAQAIAAEAAAAcAA8AAQAJAAMAAAASAAgAAQALAAsAAAATAAgAAQALAAsAAAAUAAgAAQALAAsAAAAVAAgAAQALAAsAAAAWAAgAAQALAAsAAAAXAAgAAQALAAsAAAAYAAgAAQALAAsAAAAZAAgAAQALAAsAAAAaAAgAAQALAAsAAAAbAAgAAQALAAsAAAARAAgAAQALAAsAAAARAAYAAQAAAAkAAAARAAcAAQAAAAoAAAAQAAYAAQAHAAEAAAAQAAcAAQAHAAIAAAAQAA4AAQAHAAIAAAAQAA8AAQAHAAMAAAARAA8AAQAIAAMAAAAQAA0AAQAFAAEAAAARAAkAAQALAAwAAAASAAkAAQALAAwAAAATAAkAAQALAAwAAAAUAAkAAQALAAwAAAAVAAkAAQALAAwAAAAWAAkAAQALAAwAAAAXAAkAAQALAAwAAAAYAAkAAQALAAwAAAAZAAkAAQALAAwAAAAaAAkAAQALAAwAAAAbAAkAAQALAAwAAAAbAAoAAQALAAwAAAAbAAsAAQALAAwAAAAbAAwAAQALAAwAAAAaAAwAAQALAAwAAAAaAAsAAQALAAwAAAAaAAoAAQALAAwAAAAZAAoAAQALAAwAAAAZAAsAAQALAAwAAAAZAAwAAQALAAwAAAAYAAwAAQALAAwAAAAXAAwAAQALAAwAAAAXAAsAAQALAAwAAAAYAAsAAQALAAwAAAAYAAoAAQALAAwAAAAXAAoAAQALAAwAAAAWAAoAAQALAAwAAAAVAAoAAQALAAwAAAAUAAoAAQALAAwAAAATAAoAAQALAAwAAAASAAoAAQALAAwAAAARAAoAAQALAAwAAAARAAsAAQALAAwAAAARAAwAAQALAAwAAAASAAwAAQALAAwAAAATAAwAAQALAAwAAAAUAAwAAQALAAwAAAAVAAwAAQALAAwAAAAWAAwAAQALAAwAAAAWAAsAAQALAAwAAAAVAAsAAQALAAwAAAAUAAsAAQALAAwAAAATAAsAAQALAAwAAAASAAsAAQALAAwAAAASAA0AAQALAAwAAAARAA0AAQALAAwAAAARAA4AAQALAAwAAAASAA4AAQALAAwAAAATAA4AAQALAAwAAAAUAA4AAQALAAwAAAAVAA4AAQALAAwAAAAWAA4AAQALAAwAAAAXAA4AAQALAAwAAAAYAA4AAQALAAwAAAAZAA4AAQALAAwAAAAaAA0AAQALAAwAAAAbAA0AAQALAAwAAAAbAA4AAQALAAwAAAAaAA4AAQALAAwAAAAZAA0AAQALAAwAAAAYAA0AAQALAAwAAAAXAA0AAQALAAwAAAAWAA0AAQALAAwAAAAVAA0AAQALAAwAAAAUAA0AAQALAAwAAAATAA0AAQALAAwAAAAOAAkAAQAAAAkAAAAOAAoAAQAAAAoAAAAPAAkAAQABAAkAAAAPAAoAAQABAAoAAAAQAAkAAQACAAkAAAAQAAoAAQACAAoAAAAQAAgAAQAHAAIAAAAQAAwAAQAIAAAAAAAPAAwAAQAIAAAAAAAOAAwAAQAIAAAAAAAOAAsAAQAIAAAAAAAPAAsAAQAIAAAAAAAQAAsAAQAIAAAAAAAPAA0AAQAIAAMAAAAOAA0AAQAIAAMAAAA=")
+tile_set = SubResource("TileSet_u8nhc")
+
+[node name="Label" type="Label" parent="."]
+texture_filter = 1
+offset_left = 675.0
+offset_top = 462.0
+offset_right = 813.0
+offset_bottom = 488.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_wruqr")
+theme_override_font_sizes/font_size = 24
+text = "<- Datacenter"
+horizontal_alignment = 1
+
+[node name="FurnitureTileMaps" type="Node2D" parent="."]
+
+[node name="FurnitureTileMap01" type="TileMapLayer" parent="FurnitureTileMaps"]
+tile_map_data = PackedByteArray("AAAZAAcAAAAEAB4AAAAZAAgAAAAEAB8AAAAaAAcAAAAFAB4AAAAaAAgAAAAFAB8AAAAbAAcAAAAGAB4AAAAbAAgAAAAGAB8AAAAWAAYAAAACABcAAAAWAAcAAAACABgAAAAWAAgAAAACABkAAAAXAAYAAAADABcAAAAXAAcAAAADABgAAAAXAAgAAAADABkAAAAYAAYAAAAGAAcAAAAYAAcAAAAGAAgAAAAYAAgAAAAGAAkAAAAaAAsAAAAMABYAAAAaAAwAAAAMABcAAAAaAA0AAAAMABgAAAAbAAsAAAANABYAAAAbAAwAAAANABcAAAAbAA0AAAANABgAAAAUAAYAAAAHAAwAAAAUAAcAAAAHAA0AAAAUAAgAAAAHAA4AAAAVAAYAAAAIAAwAAAAVAAcAAAAIAA0AAAAVAAgAAAAIAA4AAAARAAYAAAAIAAoAAAARAAcAAAAIAAsAAAASAAYAAAADAA4AAAASAAcAAAADAA8AAAASAAgAAAADABAAAAATAAYAAAAEAA4AAAATAAcAAAAEAA8AAAATAAgAAAAEABAAAAA=")
+tile_set = SubResource("TileSet_hsito")
+
+[node name="FurnitureTileMap02" type="TileMapLayer" parent="FurnitureTileMaps"]
+tile_map_data = PackedByteArray("AAAZAAgAAAANAA4AAAAaAAcAAAAOAA0AAAAaAAgAAAAOAA4AAAAbAAgAAAAPAA4AAAARAA0AAAAMADEAAAARAA4AAAAMADIAAAASAA0AAAANADEAAAASAA4AAAANADIAAAA=")
+tile_set = SubResource("TileSet_hsito")
+
+[node name="FurnitureTileMap03" type="TileMapLayer" parent="FurnitureTileMaps"]
+tile_map_data = PackedByteArray("AAAaAAgAAAABAAgAAAAaAAkAAAABAAkAAAA=")
+tile_set = SubResource("TileSet_hsito")
+
+[node name="PlayerBody2D" parent="." instance=ExtResource("2_ei2s5")]
+unique_name_in_owner = true
+position = Vector2(789, 541)
+
+[node name="DataCenterArea2D" type="Area2D" parent="."]
+position = Vector2(690, 573)
+script = ExtResource("4_43ocd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DataCenterArea2D"]
+shape = SubResource("RectangleShape2D_8qan1")
+
+[node name="MainDeskArea2D" type="Area2D" parent="."]
+position = Vector2(1272, 447)
+script = ExtResource("4_43ocd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MainDeskArea2D"]
+shape = SubResource("RectangleShape2D_hsito")
+
+[node name="TooltipDesktop" type="PanelContainer" parent="MainDeskArea2D"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_top = -90.0
+offset_right = 24.0
+offset_bottom = -42.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hs4kw")
+
+[node name="Label" type="Label" parent="MainDeskArea2D/TooltipDesktop"]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 32
+text = "E"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BuildDeskArea2D" type="Area2D" parent="."]
+position = Vector2(1280, 595)
+script = ExtResource("4_43ocd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BuildDeskArea2D"]
+shape = SubResource("RectangleShape2D_lcnwv")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UIContainer" type="CenterContainer" parent="CanvasLayer"]
+unique_name_in_owner = true
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("5_lcwox")
+
+[node name="UIWindow" type="NinePatchRect" parent="CanvasLayer/UIContainer"]
+visible = false
+texture_filter = 1
+custom_minimum_size = Vector2(1100, 700)
+layout_mode = 2
+texture = ExtResource("5_hsito")
+region_rect = Rect2(24, 72, 96, 93)
+patch_margin_left = 24
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="CloseButton" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+
+[node name="CloseButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/CloseButton"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -48.0
+offset_bottom = 48.0
+grow_horizontal = 0
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_lcnwv")
+texture_pressed = SubResource("AtlasTexture_lcnwv")
+texture_hover = SubResource("AtlasTexture_lcnwv")
+texture_disabled = SubResource("AtlasTexture_4i814")
+texture_focused = SubResource("AtlasTexture_lcnwv")
+script = ExtResource("8_s0aar")
+
+[node name="TutorialContent" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer" instance=ExtResource("11_2uru3")]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="DesktopContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+script = ExtResource("8_knsl5")
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Desktop"
+label_settings = ExtResource("6_lcnwv")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_constants/margin_top = 64
+theme_override_constants/margin_bottom = 64
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer"]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer"]
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/h_separation = 48
+theme_override_constants/v_separation = 32
+columns = 3
+
+[node name="EmailContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="EmailButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/EmailContainer"]
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_wruqr")
+texture_pressed = SubResource("AtlasTexture_lcwox")
+texture_hover = SubResource("AtlasTexture_3xqf3")
+texture_focused = SubResource("AtlasTexture_70x1r")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/EmailContainer"]
+layout_mode = 2
+text = "E-Mail"
+label_settings = ExtResource("7_4i814")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShopContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="ShopButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/ShopContainer"]
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_knsl5")
+texture_pressed = SubResource("AtlasTexture_s0aar")
+texture_hover = SubResource("AtlasTexture_gxl1f")
+texture_focused = SubResource("AtlasTexture_2uxut")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/ShopContainer"]
+layout_mode = 2
+text = "Shop"
+label_settings = ExtResource("7_4i814")
+horizontal_alignment = 1
+
+[node name="DatacentersContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="DatacentersButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/DatacentersContainer"]
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_8qan1")
+texture_pressed = SubResource("AtlasTexture_jktts")
+texture_hover = SubResource("AtlasTexture_25m5p")
+texture_focused = SubResource("AtlasTexture_ga26y")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/DatacentersContainer"]
+layout_mode = 2
+text = "Datacenters"
+label_settings = ExtResource("7_4i814")
+horizontal_alignment = 1
+
+[node name="CustomersContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="CustomersButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/CustomersContainer"]
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_n1y4y")
+texture_pressed = SubResource("AtlasTexture_m8tx5")
+texture_hover = SubResource("AtlasTexture_4hetp")
+texture_focused = SubResource("AtlasTexture_o3cd7")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/CustomersContainer"]
+layout_mode = 2
+text = "Customers"
+label_settings = ExtResource("7_4i814")
+horizontal_alignment = 1
+
+[node name="InventoryContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+mouse_filter = 2
+
+[node name="InventoryButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/InventoryContainer"]
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_bm8iy")
+texture_pressed = SubResource("AtlasTexture_bm8iy")
+texture_hover = SubResource("AtlasTexture_bm8iy")
+texture_focused = SubResource("AtlasTexture_bm8iy")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/InventoryContainer"]
+layout_mode = 2
+text = "Inventory"
+label_settings = ExtResource("7_4i814")
+horizontal_alignment = 1
+
+[node name="SubMenus" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+mouse_filter = 2
+
+[node name="BackButton" type="RichTextLabel" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0.22745098, 0.22745098, 0.3137255, 1)
+theme_override_fonts/normal_font = ExtResource("8_wruqr")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[url={\"key\": \"back\"}]< Back[/url]"
+fit_content = true
+script = ExtResource("10_3xqf3")
+
+[node name="EmailContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("15_n1y4y")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="EmailTitles" type="NinePatchRect" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+texture = ExtResource("5_hsito")
+region_rect = Rect2(144, 768, 144, 144)
+patch_margin_left = 48
+patch_margin_top = 48
+patch_margin_right = 48
+patch_margin_bottom = 48
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailTitles"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailTitles/MarginContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="EmailContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailTitles/MarginContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="EmailDetails" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="EmailTitle" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailDetails"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+
+[node name="EmailDetail" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailDetails"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+
+[node name="EmailText" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailDetails"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(575, 300)
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+autowrap_mode = 3
+
+[node name="EmailDetailButtons" type="HBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailDetails"]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="InfoButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailDetails/EmailDetailButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_2k2f6")
+texture_pressed = SubResource("AtlasTexture_bveom")
+texture_hover = SubResource("AtlasTexture_6jtqa")
+texture_focused = SubResource("AtlasTexture_nl0r1")
+stretch_mode = 5
+
+[node name="TrashButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailDetails/EmailDetailButtons"]
+unique_name_in_owner = true
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_26ul0")
+texture_pressed = SubResource("AtlasTexture_5bs7n")
+texture_hover = SubResource("AtlasTexture_cu40l")
+texture_focused = SubResource("AtlasTexture_qt548")
+stretch_mode = 5
+
+[node name="ShopContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("16_m8tx5")
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer"]
+texture_filter = 1
+layout_mode = 2
+mouse_filter = 2
+theme_override_constants/h_separation = 32
+theme_override_constants/v_separation = 32
+columns = 4
+
+[node name="SystemsContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="SystemsButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/SystemsContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/SystemsContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Systems"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BarebonesContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="BarebonesButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/BarebonesContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/BarebonesContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Barebones"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CasesContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="CasesButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/CasesContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/CasesContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Cases"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MainboardContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="MainboardButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/MainboardContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/MainboardContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Mainboards"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CPUsContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="CPUsButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/CPUsContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/CPUsContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "CPUs"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RAMContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="RAMButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/RAMContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/RAMContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "RAM"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SSDsContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="SSDsButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/SSDsContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/SSDsContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "SSDs"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HDDsContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="HDDsButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/HDDsContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/HDDsContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "HDDs"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PSUContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="PSUButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/PSUContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/PSUContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Power Supplies"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FansContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer"]
+custom_minimum_size = Vector2(200, 96)
+layout_mode = 2
+
+[node name="FansButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/FansContainer"]
+layout_mode = 2
+texture_normal = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/FansContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Fans"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShopItemContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("17_8qan1")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ShopItemNames" type="NinePatchRect" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer"]
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+texture = ExtResource("5_hsito")
+region_rect = Rect2(144, 768, 144, 144)
+patch_margin_left = 48
+patch_margin_top = 48
+patch_margin_right = 48
+patch_margin_bottom = 48
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemNames"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemNames/MarginContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 0
+
+[node name="ShopItemContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemNames/MarginContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="ShopItemDetails" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 2
+theme_override_constants/separation = 12
+
+[node name="ShopItemName" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Sumsang Pro 1.96TB"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShopItemSpecTitle" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Specifications:"
+
+[node name="ShopItemSpecs" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Capacity: 1.96TB
+Formfactor: M.2"
+
+[node name="ShopItemPrice" type="HBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails"]
+layout_mode = 2
+
+[node name="ShopItemPriceText" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails/ShopItemPrice"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Price:"
+
+[node name="ShopItemPrice" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails/ShopItemPrice"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "300"
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails/ShopItemPrice"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_4360s")
+stretch_mode = 5
+
+[node name="ShopBuyButton" type="TextureButton" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails"]
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_a0t2l")
+texture_pressed = SubResource("AtlasTexture_xemgy")
+texture_hover = SubResource("AtlasTexture_g6veu")
+texture_focused = SubResource("AtlasTexture_2prrh")
+stretch_mode = 5
+
+[node name="DatacentersContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("18_bm8iy")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="ReferenceRect" type="ReferenceRect" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer"]
+custom_minimum_size = Vector2(540, 580)
+layout_mode = 2
+border_color = Color(0, 0, 0, 0)
+
+[node name="ServerShelfs" type="Node2D" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer"]
+physics_interpolation_mode = 2
+texture_filter = 1
+script = ExtResource("19_bm8iy")
+
+[node name="Row_01" type="Node2D" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs"]
+position = Vector2(50, 65.5)
+
+[node name="ServerShelf2D_01" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01" instance=ExtResource("18_25m5p")]
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01/ServerShelf2D_01"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_02" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01" instance=ExtResource("18_25m5p")]
+position = Vector2(63, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01/ServerShelf2D_02"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_03" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01" instance=ExtResource("18_25m5p")]
+position = Vector2(126, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01/ServerShelf2D_03"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_04" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01" instance=ExtResource("18_25m5p")]
+position = Vector2(189, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01/ServerShelf2D_04"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_05" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01" instance=ExtResource("18_25m5p")]
+position = Vector2(252, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01/ServerShelf2D_05"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_06" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01" instance=ExtResource("18_25m5p")]
+position = Vector2(315, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01/ServerShelf2D_06"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_07" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01" instance=ExtResource("18_25m5p")]
+position = Vector2(378, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01/ServerShelf2D_07"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_08" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01" instance=ExtResource("18_25m5p")]
+position = Vector2(441, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_01/ServerShelf2D_08"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="Row_02" type="Node2D" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs"]
+position = Vector2(50, 256.5)
+
+[node name="ServerShelf2D_01" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02" instance=ExtResource("18_25m5p")]
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02/ServerShelf2D_01"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_02" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02" instance=ExtResource("18_25m5p")]
+position = Vector2(63, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02/ServerShelf2D_02"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_03" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02" instance=ExtResource("18_25m5p")]
+position = Vector2(126, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02/ServerShelf2D_03"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_04" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02" instance=ExtResource("18_25m5p")]
+position = Vector2(189, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02/ServerShelf2D_04"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_05" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02" instance=ExtResource("18_25m5p")]
+position = Vector2(252, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02/ServerShelf2D_05"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_06" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02" instance=ExtResource("18_25m5p")]
+position = Vector2(315, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02/ServerShelf2D_06"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_07" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02" instance=ExtResource("18_25m5p")]
+position = Vector2(378, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02/ServerShelf2D_07"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_08" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02" instance=ExtResource("18_25m5p")]
+position = Vector2(441, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_02/ServerShelf2D_08"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="Row_03" type="Node2D" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs"]
+position = Vector2(50, 448.5)
+
+[node name="ServerShelf2D_01" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03" instance=ExtResource("18_25m5p")]
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03/ServerShelf2D_01"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_02" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03" instance=ExtResource("18_25m5p")]
+position = Vector2(63, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03/ServerShelf2D_02"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_03" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03" instance=ExtResource("18_25m5p")]
+position = Vector2(126, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03/ServerShelf2D_03"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_04" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03" instance=ExtResource("18_25m5p")]
+position = Vector2(189, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03/ServerShelf2D_04"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_05" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03" instance=ExtResource("18_25m5p")]
+position = Vector2(252, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03/ServerShelf2D_05"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_06" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03" instance=ExtResource("18_25m5p")]
+position = Vector2(315, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03/ServerShelf2D_06"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_07" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03" instance=ExtResource("18_25m5p")]
+position = Vector2(378, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03/ServerShelf2D_07"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ServerShelf2D_08" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03" instance=ExtResource("18_25m5p")]
+position = Vector2(441, 0)
+script = ExtResource("19_ga26y")
+
+[node name="Control" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs/Row_03/ServerShelf2D_08"]
+z_as_relative = false
+custom_minimum_size = Vector2(60, 87)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("19_2k2f6")
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ScrollContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Server List"
+
+[node name="DragDropContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="CustomersContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("24_nl0r1")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/CustomersContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/CustomersContent/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/CustomersContent/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Customers"
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/CustomersContent/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="CustomerContainer" type="GridContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/CustomersContent/MarginContainer/VBoxContainer/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+
+[node name="PanelContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/CustomersContent/MarginContainer/VBoxContainer/ScrollContainer/CustomerContainer" instance=ExtResource("25_26ul0")]
+layout_mode = 2
+
+[node name="InventoryContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+visible = false
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("26_26ul0")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+theme_override_styles/panel = SubResource("StyleBoxFlat_qt548")
+current_tab = 1
+
+[node name="Devices" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent/MarginContainer/TabContainer"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+metadata/_tab_index = 0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent/MarginContainer/TabContainer/Devices"]
+layout_mode = 2
+
+[node name="DevicesContainer" type="GridContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent/MarginContainer/TabContainer/Devices/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+
+[node name="Components" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent/MarginContainer/TabContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 24
+metadata/_tab_index = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent/MarginContainer/TabContainer/Components"]
+layout_mode = 2
+
+[node name="ComponentsContainer" type="GridContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent/MarginContainer/TabContainer/Components/ScrollContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
+
+[node name="InventoryDeviceContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("27_5bs7n")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 128
+alignment = 1
+
+[node name="TitleContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent/MarginContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent/MarginContainer/HBoxContainer/TitleContainer"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_cu40l")
+stretch_mode = 5
+
+[node name="DeviceTitleLabel" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent/MarginContainer/HBoxContainer/TitleContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="DeviceCustomerLabel" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent/MarginContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Assigned Customer:"
+
+[node name="DevicePowerLabel" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent/MarginContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Power Consumption:"
+
+[node name="DeviceSpecLabel" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent/MarginContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 28
+text = "Specs:"
+
+[node name="InventoryComponentContent" type="Control" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+script = ExtResource("28_cu40l")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 128
+alignment = 1
+
+[node name="TitleContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent/MarginContainer/HBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent/MarginContainer/HBoxContainer/TitleContainer"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_cu40l")
+stretch_mode = 5
+
+[node name="ComponentTitleLabel" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent/MarginContainer/HBoxContainer/TitleContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent/MarginContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="ComponentDescriptionLabel" type="Label" parent="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent/MarginContainer/HBoxContainer/VBoxContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est."
+autowrap_mode = 2
+
+[node name="PopupWindow" type="NinePatchRect" parent="CanvasLayer/UIContainer"]
+unique_name_in_owner = true
+visible = false
+texture_filter = 1
+custom_minimum_size = Vector2(900, 550)
+layout_mode = 2
+texture = ExtResource("5_hsito")
+region_rect = Rect2(24, 72, 96, 93)
+patch_margin_left = 24
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/UIContainer/PopupWindow"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 48
+
+[node name="PopupContainer" type="VBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="TitleContainer" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer"]
+layout_mode = 2
+
+[node name="BackButtonPopup" type="RichTextLabel" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/TitleContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.22745098, 0.22745098, 0.3137255, 1)
+theme_override_fonts/normal_font = ExtResource("8_wruqr")
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "[url={\"key\": \"back\"}]< Back[/url]"
+fit_content = true
+autowrap_mode = 0
+script = ExtResource("17_m8tx5")
+
+[node name="PopupTitle" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/TitleContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 40
+text = "Offer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OfferContent" type="VBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+script = ExtResource("18_4hetp")
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="SpecsContainer" type="GridContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/h_separation = 16
+theme_override_constants/v_separation = 16
+columns = 2
+
+[node name="SpecContainer" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer"]
+custom_minimum_size = Vector2(312, 70)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_4hetp")
+stretch_mode = 5
+
+[node name="CPUGenLabel" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "CPU-Gen 3"
+
+[node name="SpecContainer2" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer"]
+custom_minimum_size = Vector2(312, 70)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer2"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_4hetp")
+stretch_mode = 5
+
+[node name="CPUCoresLabel" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "2 Cores at 3,8Ghz+"
+
+[node name="SpecContainer3" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer"]
+custom_minimum_size = Vector2(312, 70)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer3"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_4hetp")
+stretch_mode = 5
+
+[node name="RAMLabel" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "2GB DDR4"
+
+[node name="SpecContainer4" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer"]
+custom_minimum_size = Vector2(312, 70)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer4"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_4hetp")
+stretch_mode = 5
+
+[node name="StorageLabel" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer4"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "30GB SSD"
+
+[node name="SpecContainer5" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer"]
+custom_minimum_size = Vector2(312, 70)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer5"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_4hetp")
+stretch_mode = 5
+
+[node name="ConnectionLabel" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer5"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "1GBit Connection"
+
+[node name="SpecContainer6" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer"]
+custom_minimum_size = Vector2(312, 70)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer6"]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_4hetp")
+stretch_mode = 5
+
+[node name="SLALabel" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/CenterContainer/SpecsContainer/SpecContainer6"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "SLA: none"
+
+[node name="ServerAssignment" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent"]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/ServerAssignment"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Assigned Server"
+
+[node name="ServerSelector" type="OptionButton" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/ServerAssignment"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_wruqr")
+theme_override_font_sizes/font_size = 26
+selected = 0
+item_count = 1
+popup/item_0/text = "Server 1"
+popup/item_0/id = 0
+
+[node name="FeedbackContainer" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+alignment = 1
+
+[node name="AssignFeedbackIcon" type="TextureRect" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/FeedbackContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("19_o3cd7")
+
+[node name="AssignFeedback" type="Label" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/FeedbackContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Already assigned!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DecisionButton" type="HBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent"]
+layout_mode = 2
+theme_override_constants/separation = 64
+alignment = 1
+
+[node name="AcceptButton" type="TextureButton" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/DecisionButton"]
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_5c3wu")
+texture_pressed = SubResource("AtlasTexture_g68bc")
+texture_hover = SubResource("AtlasTexture_jtogi")
+texture_focused = SubResource("AtlasTexture_1g0dp")
+stretch_mode = 5
+
+[node name="TrashButton" type="TextureButton" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/DecisionButton"]
+layout_mode = 2
+action_mode = 0
+texture_normal = SubResource("AtlasTexture_26ul0")
+texture_pressed = SubResource("AtlasTexture_5bs7n")
+texture_hover = SubResource("AtlasTexture_cu40l")
+texture_focused = SubResource("AtlasTexture_qt548")
+stretch_mode = 5
+
+[node name="ServerSelectionContent" type="VBoxContainer" parent="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+
+[node name="HUDContainer" type="MarginContainer" parent="CanvasLayer"]
+texture_filter = 1
+offset_right = 564.0
+offset_bottom = 192.0
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/HUDContainer"]
+layout_mode = 2
+
+[node name="PlayerStatsRect" type="NinePatchRect" parent="CanvasLayer/HUDContainer/VBoxContainer"]
+custom_minimum_size = Vector2(384, 82)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("5_hsito")
+region_rect = Rect2(174, 555, 84, 87)
+patch_margin_left = 24
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HUDContainer/VBoxContainer/PlayerStatsRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 49
+theme_override_constants/margin_top = 49
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HUDContainer/VBoxContainer/PlayerStatsRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="PlayerLabel" type="TextureRect" parent="CanvasLayer/HUDContainer/VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("7_gxl1f")
+
+[node name="LevelLabel" type="Label" parent="CanvasLayer/HUDContainer/VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("8_wruqr")
+theme_override_font_sizes/font_size = 26
+text = "Level 1"
+
+[node name="CoinsContainer" type="HBoxContainer" parent="CanvasLayer/HUDContainer/VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CoinsLabel" type="Label" parent="CanvasLayer/HUDContainer/VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer/CoinsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("8_wruqr")
+theme_override_font_sizes/font_size = 32
+horizontal_alignment = 2
+
+[node name="CoinsIcon" type="TextureRect" parent="CanvasLayer/HUDContainer/VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer/CoinsContainer"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_hs4kw")
+expand_mode = 3
+
+[node name="ClockRect" type="NinePatchRect" parent="CanvasLayer/HUDContainer/VBoxContainer"]
+custom_minimum_size = Vector2(332, 72)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("5_hsito")
+region_rect = Rect2(174, 555, 84, 87)
+patch_margin_left = 24
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/HUDContainer/VBoxContainer/ClockRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/HUDContainer/VBoxContainer/ClockRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="DateLabel" type="Label" parent="CanvasLayer/HUDContainer/VBoxContainer/ClockRect/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("8_wruqr")
+theme_override_font_sizes/font_size = 26
+text = "1st Dec."
+
+[node name="ClockLabel" type="Label" parent="CanvasLayer/HUDContainer/VBoxContainer/ClockRect/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+texture_filter = 1
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("8_wruqr")
+theme_override_font_sizes/font_size = 26
+text = "6:00 AM"
+
+[node name="SkipButton" type="Button" parent="CanvasLayer/HUDContainer/VBoxContainer/ClockRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme = ExtResource("5_lcwox")
+theme_override_font_sizes/font_size = 23
+text = "Skip Day"
+script = ExtResource("28_ekubs")
+
+[node name="TutorialCheckContainer" type="MarginContainer" parent="CanvasLayer"]
+unique_name_in_owner = true
+visible = false
+texture_filter = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+theme = ExtResource("5_lcwox")
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+script = ExtResource("29_bveom")
+
+[node name="TutorialChecklistRect" type="NinePatchRect" parent="CanvasLayer/TutorialCheckContainer"]
+custom_minimum_size = Vector2(372, 360)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("5_hsito")
+region_rect = Rect2(174, 555, 84, 87)
+patch_margin_left = 24
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="ChecklistContainer" type="VBoxContainer" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect/MarginContainer"]
+layout_mode = 2
+
+[node name="TitleLabel" type="Label" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect/MarginContainer/ChecklistContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Tutorial"
+horizontal_alignment = 1
+
+[node name="Checkbox1" type="HBoxContainer" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect/MarginContainer/ChecklistContainer"]
+layout_mode = 2
+
+[node name="CheckboxRect1" type="TextureRect" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect/MarginContainer/ChecklistContainer/Checkbox1"]
+layout_mode = 2
+texture = ExtResource("30_6jtqa")
+
+[node name="Label" type="Label" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect/MarginContainer/ChecklistContainer/Checkbox1"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Read the 1. tutorial text"
+
+[node name="Checkbox2" type="HBoxContainer" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect/MarginContainer/ChecklistContainer"]
+layout_mode = 2
+
+[node name="CheckboxRect2" type="TextureRect" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect/MarginContainer/ChecklistContainer/Checkbox2"]
+layout_mode = 2
+texture = ExtResource("31_nl0r1")
+
+[node name="Label" type="Label" parent="CanvasLayer/TutorialCheckContainer/TutorialChecklistRect/MarginContainer/ChecklistContainer/Checkbox2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 26
+text = "Accept your first customer"
+
+[connection signal="timeout" from="Clock" to="Clock" method="_on_timeout"]
+[connection signal="body_entered" from="DataCenterArea2D" to="DataCenterArea2D" method="_on_body_entered"]
+[connection signal="body_exited" from="DataCenterArea2D" to="DataCenterArea2D" method="_on_body_exited"]
+[connection signal="body_entered" from="MainDeskArea2D" to="MainDeskArea2D" method="_on_body_entered"]
+[connection signal="body_exited" from="MainDeskArea2D" to="MainDeskArea2D" method="_on_body_exited"]
+[connection signal="body_entered" from="BuildDeskArea2D" to="BuildDeskArea2D" method="_on_body_entered"]
+[connection signal="body_exited" from="BuildDeskArea2D" to="BuildDeskArea2D" method="_on_body_exited"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/CloseButton/CloseButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/CloseButton/CloseButton" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/EmailContainer/EmailButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent" method="_on_email_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/ShopContainer/ShopButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent" method="_on_shop_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/DatacentersContainer/DatacentersButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent" method="_on_datacenters_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/CustomersContainer/CustomersButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent" method="_on_customers_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent/MarginContainer/CenterContainer/GridContainer/InventoryContainer/InventoryButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/DesktopContent" method="_on_inventory_button_pressed"]
+[connection signal="meta_clicked" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/BackButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/BackButton" method="_on_meta_clicked"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent" method="_on_visibility_changed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailDetails/EmailDetailButtons/InfoButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent" method="_on_info_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent/HBoxContainer/EmailDetails/EmailDetailButtons/TrashButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent" method="_on_trash_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/SystemsContainer/SystemsButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_systems_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/BarebonesContainer/BarebonesButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_barebones_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/CasesContainer/CasesButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_cases_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/MainboardContainer/MainboardButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_mainboard_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/CPUsContainer/CPUsButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_cpus_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/RAMContainer/RAMButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_ram_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/SSDsContainer/SSDsButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_ssds_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/HDDsContainer/HDDsButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_hdds_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/PSUContainer/PSUButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_psu_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent/CenterContainer/GridContainer/FansContainer/FansButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopContent" method="_on_fans_button_pressed"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent" method="_on_visibility_changed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent/HBoxContainer/ShopItemDetails/ShopBuyButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/ShopItemContent" method="_on_shop_buy_button_pressed"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/DatacentersContent/HBoxContainer/ServerShelfs" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/CustomersContent" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/CustomersContent" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryContent" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryDeviceContent" method="_on_visibility_changed"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/InventoryComponentContent" method="_on_visibility_changed"]
+[connection signal="meta_clicked" from="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/TitleContainer/BackButtonPopup" to="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/TitleContainer/BackButtonPopup" method="_on_meta_clicked"]
+[connection signal="visibility_changed" from="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent" to="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent" method="_on_visibility_changed"]
+[connection signal="item_selected" from="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/ServerAssignment/ServerSelector" to="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent" method="_on_server_selector_item_selected"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/DecisionButton/AcceptButton" to="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent" method="_on_accept_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/UIContainer/PopupWindow/MarginContainer/PopupContainer/OfferContent/DecisionButton/TrashButton" to="CanvasLayer/UIContainer/UIWindow/MarginContainer/SubMenus/EmailContent" method="_on_trash_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/HUDContainer/VBoxContainer/ClockRect/MarginContainer/HBoxContainer/SkipButton" to="CanvasLayer/HUDContainer/VBoxContainer/ClockRect/MarginContainer/HBoxContainer/SkipButton" method="_on_pressed"]

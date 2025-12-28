@@ -1,0 +1,194 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm5sseq3he2fm"]
+
+[ext_resource type="Theme" uid="uid://bgihxlm45a5q2" path="res://main_theme.tres" id="1_x2hje"]
+
+[sub_resource type="GDScript" id="GDScript_x2hje"]
+script/source = "extends Button
+
+func _on_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://title_screen.tscn\")
+"
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_x2hje")
+
+[node name="Panel3" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel3/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="BackButton" type="Button" parent="Panel3/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 48
+text = "<- Back"
+script = SubResource("GDScript_x2hje")
+
+[node name="TabContainer" type="TabContainer" parent="Panel3/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/side_margin = 16
+theme_override_constants/tab_separation = 8
+theme_override_font_sizes/font_size = 40
+current_tab = 0
+
+[node name="General" type="Panel" parent="Panel3/MarginContainer/VBoxContainer/TabContainer"]
+layout_mode = 2
+metadata/_tab_index = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/General"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/General/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/General/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/General/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+text = "Language"
+
+[node name="OptionButton" type="OptionButton" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/General/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_font_sizes/font_size = 32
+selected = 0
+item_count = 1
+popup/item_0/text = "English"
+popup/item_0/id = 0
+
+[node name="Graphics" type="Panel" parent="Panel3/MarginContainer/VBoxContainer/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Graphics"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Graphics/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Graphics/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Graphics/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+text = "Antialiasing (MSAA)"
+
+[node name="OptionButton" type="OptionButton" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Graphics/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_font_sizes/font_size = 32
+selected = 0
+item_count = 3
+popup/item_0/text = "Disabled"
+popup/item_0/id = 0
+popup/item_1/text = "2x"
+popup/item_1/id = 1
+popup/item_2/text = "4x"
+popup/item_2/id = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Graphics/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Graphics/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+text = "V-Sync"
+
+[node name="OptionButton" type="OptionButton" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Graphics/MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_font_sizes/font_size = 32
+selected = 1
+item_count = 2
+popup/item_0/text = "Disabled"
+popup/item_0/id = 0
+popup/item_1/text = "Enabled"
+popup/item_1/id = 1
+
+[node name="Debug" type="Panel" parent="Panel3/MarginContainer/VBoxContainer/TabContainer"]
+visible = false
+layout_mode = 2
+metadata/_tab_index = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Debug"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 48
+theme_override_constants/margin_top = 48
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Debug/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel3/MarginContainer/VBoxContainer/TabContainer/Debug/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 48
+text = "Coming Soon"
+
+[connection signal="pressed" from="Panel3/MarginContainer/VBoxContainer/BackButton" to="Panel3/MarginContainer/VBoxContainer/BackButton" method="_on_pressed"]

@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8lfanto5x56y"]
+
+[ext_resource type="Script" uid="uid://bslbi60fdlgyg" path="res://scripts/template_device.gd" id="1_dtcs4"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_jktts"]
+size = Vector2(196, 40)
+
+[node name="VBoxContainer" type="VBoxContainer"]
+custom_minimum_size = Vector2(384, 96)
+script = ExtResource("1_dtcs4")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0.22745098, 0.22745098, 0.3137255, 1)
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "WhyNot Rack 3010s"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="meta_clicked" from="Label" to="." method="_on_label_meta_clicked"]

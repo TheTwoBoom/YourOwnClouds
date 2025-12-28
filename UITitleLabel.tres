@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://blk4bs5ym0o7x"]
+
+[ext_resource type="FontFile" uid="uid://h5lhoy8ttlqj" path="res://assets/Geo-Regular.ttf" id="1_f6yns"]
+
+[resource]
+line_spacing = 4.0
+font = ExtResource("1_f6yns")
+font_size = 56
+font_color = Color(0.22745098, 0.22745098, 0.3137255, 1)
+shadow_size = 0

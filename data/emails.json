@@ -1,0 +1,237 @@
+[
+  {
+	"id": 1,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "freeTrash",
+	"content": "Simply reply to this email with your credit card details and you'll get a free brick delivered right to your doorstep! \n*General terms and conditions apply. \nMinimum contract term:\n24 months",
+	"type": "spam",
+  },
+  {
+	"id": 2,
+	"sender_id": 2,
+	"unix_timestamp": 1763626229,
+	"title": "TestInquiry",
+	"content": "This is the tutorial inquiry, click the info button to accept it.",
+	"requiredLevel": 0,
+	"requestedCategory": "dedi",
+	"specs": {
+	  "cpuGen": 3,
+	  "cpuCores": 12,
+	  "cpuClock": 3.5,
+	  "ramType": "DDR4",
+	  "ramCapacity": 64,
+	  "storageType": "ssd",
+	  "storageCapacity": 960,
+	  "networkSpeed": 1,
+	  "networkQualityIndex": 5,
+	  "slaRequirements": null
+	},
+	"paymentPerMonth": 95,
+	"type": "inquiry",
+  },
+  {
+	"id": 3,
+	"sender_id": 4,
+	"unix_timestamp": 1763626229,
+	"title": "TestInquiry",
+	"content": "A debug inquiry about a dedicated server. I don't think this should exist in the final game!",
+	"requiredLevel": 0,
+	"requestedCategory": "dedi",
+	"specs": {
+	  "cpuGen": 3,
+	  "cpuCores": 6,
+	  "cpuClock": 3.5,
+	  "ramType": "DDR4",
+	  "ramCapacity": 128,
+	  "storageType": "ssd",
+	  "storageCapacity": 480,
+	  "networkSpeed": 1,
+	  "networkQualityIndex": 5,
+	  "slaRequirements": null
+	},
+	"paymentPerMonth": 75,
+	"type": "inquiry",
+  },
+  {
+	"id": 4,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "New 2-in-1 PSU",
+	"content": "S-C-A-M Co. has now released a new generation of 2-in-1 PSUs which combine 2 genius functions into one device. \nWhen you buy one of our PSUs you now also get the free firestarter™ function, which will certainly light up your mood!",
+	"type": "spam",
+  },
+  {
+	"id": 5,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "1-for-2",
+	"content": "We are selling the finest STUFF™ in the world! If you pay for 2 STUFF™, we will ship 1 to your home address!",
+	"type": "spam",
+  },
+  {
+	"id": 6,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "Bulk Paperclips",
+	"content": "Buy industrial-grade paperclips in packs of 10,000.\nPerfect for offices, datacenters, and advanced cable management.\nUnsubscribe instructions available upon request.",
+	"type": "spam"
+  },
+  {
+	"id": 7,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "Cloud Expo 20XX",
+	"content": "You are invited to attend Cloud Expo 20XX.\nEarly-bird tickets available now.\nThis email was sent to a purchased mailing list.",
+	"type": "spam"
+  },
+  {
+	"id": 8,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "Rack-Mountable Coffee",
+	"content": "Tired of cold coffee?\nOur new 19-inch rack-mount coffee machine integrates directly into your server rack.\nPower draw: unspecified.",
+	"type": "spam"
+  },
+  {
+	"id": 9,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "Increase Productivity Instantly",
+	"content": "Studies show that reading productivity newsletters increases perceived efficiency by up to 12%.\nSubscribe to receive weekly insights.",
+	"type": "spam"
+  },
+  {
+	"id": 10,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "Leftover Domains 4 Sale",
+	"content": "Premium domain names that almost make sense.\nExamples: cloudsynergy.biz, hyperscale-now.net\nFirst come, first served.",
+	"type": "spam"
+  },
+  {
+	"id": 11,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "Data Center Feng Shui",
+	"content": "Optimize airflow, latency, and karma.\nOur consultants align your racks for maximum positive energy.\nRemote sessions available.",
+	"type": "spam"
+  },
+  {
+	"id": 12,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "New Compliance Standard Released",
+	"content": "Introducing ISO/IEC 27099++.\nNobody is certified yet, but you should start preparing immediately.",
+	"type": "spam"
+  },
+  {
+	"id": 13,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "Mystery Hardware Pallet",
+	"content": "We are auctioning a pallet of untested enterprise hardware.\nCould be cables.\nCould be printers.\nNo refunds.",
+	"type": "spam"
+  },
+  {
+	"id": 14,
+	"sender_id": 1,
+	"unix_timestamp": 1763626229,
+	"title": "Newsletter Reminder #4",
+	"content": "You are receiving this because you did not unsubscribe from our previous three reminders.\nNext reminder scheduled automatically.",
+	"type": "spam"
+  },
+  {
+	"id": 15,
+	"sender_id": 3,
+	"unix_timestamp": 1763627429,
+	"title": "High SLA needed!",
+	"content": "We are a fast-growing startup disrupting the pet food industry and need a dedicated server ASAP. Downtime is NOT an option.",
+	"requiredLevel": 1,
+	"requestedCategory": "dedi",
+	"specs": {
+	  "cpuGen": 4,
+	  "cpuCores": 8,
+	  "cpuClock": 3.8,
+	  "ramType": "DDR4",
+	  "ramCapacity": 64,
+	  "storageType": "ssd",
+	  "storageCapacity": 2000,
+	  "networkSpeed": 1,
+	  "networkQualityIndex": 7,
+	  "slaRequirements": 99.9
+	},
+	"paymentPerMonth": 140,
+	"type": "inquiry"
+  },
+  {
+	"id": 16,
+	"sender_id": 1,
+	"unix_timestamp": 1763627429,
+	"title": "FINAL WARNING",
+	"content": "Your email account has been selected for mandatory verification. Failure to respond within 24 hours will result in account suspension.\n\nKind regards,\nTotally Real Support Team",
+	"type": "spam"
+  },
+  {
+	"id": 17,
+	"sender_id": 5,
+	"unix_timestamp": 1763627429,
+	"title": "Cheap Compute",
+	"content": "Hello,\nwe are looking for the cheapest possible dedicated machine. Noise, redundancy and support are irrelevant.",
+	"requiredLevel": 2,
+	"requestedCategory": "dedi",
+	"specs": {
+	  "cpuGen": 2,
+	  "cpuCores": 4,
+	  "cpuClock": 2.5,
+	  "ramType": "DDR3",
+	  "ramCapacity": 16,
+	  "storageType": "hdd",
+	  "storageCapacity": 1000,
+	  "networkSpeed": 0.5,
+	  "networkQualityIndex": 3,
+	  "slaRequirements": null
+	},
+	"paymentPerMonth": 25,
+	"type": "inquiry"
+  },
+  {
+	"id": 18,
+	"sender_id": 1,
+	"unix_timestamp": 1763627429,
+	"title": "You WON!!!",
+	"content": "Congratulations! You have been randomly selected to win a brand new UltraHD Smart Fridge.\nTo claim your prize, simply reply with your full name, address, and a small processing fee.",
+	"type": "spam"
+  },
+  {
+	"id": 19,
+	"sender_id": 6,
+	"unix_timestamp": 1763627429,
+	"title": "Research Project",
+	"content": "We require a reliable dedicated server for data analysis related to a publicly funded research project.",
+	"requiredLevel": 3,
+	"requestedCategory": "dedi",
+	"specs": {
+	  "cpuGen": 5,
+	  "cpuCores": 24,
+	  "cpuClock": 3.2,
+	  "ramType": "DDR5",
+	  "ramCapacity": 256,
+	  "storageType": "ssd",
+	  "storageCapacity": 4000,
+	  "networkSpeed": 10,
+	  "networkQualityIndex": 9,
+	  "slaRequirements": 99.99
+	},
+	"paymentPerMonth": 420,
+	"type": "inquiry"
+  },
+  {
+	"id": 20,
+	"sender_id": 1,
+	"unix_timestamp": 1763627429,
+	"title": "Crypto Opportunity",
+	"content": "Mine crypto from HOME with guaranteed profits!!! All you need is electricity, internet, and blind faith.\nAct now, before regulations catch up!",
+	"type": "spam"
+  }
+]

@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://by7txja7q7wal"]
+
+[ext_resource type="Script" uid="uid://1kcp1nlyqxx0" path="res://scripts/drag_drop_device.gd" id="1_hdraw"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_jktts"]
+size = Vector2(196, 40)
+
+[node name="DragDropDevice" type="VBoxContainer"]
+custom_minimum_size = Vector2(384, 96)
+offset_right = 384.0
+offset_bottom = 96.0
+script = ExtResource("1_hdraw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_jktts")
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 32
+text = "WhyNot Rack 3010s"
+horizontal_alignment = 1
+vertical_alignment = 1

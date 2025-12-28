@@ -1,0 +1,72 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsnqn5ymyqsky"]
+
+[ext_resource type="Theme" uid="uid://bgihxlm45a5q2" path="res://main_theme.tres" id="1_tj26a"]
+[ext_resource type="Script" uid="uid://blun20axdkvj0" path="res://scripts/tutorial.gd" id="2_62h8k"]
+
+[node name="TutorialContent" type="Control"]
+custom_minimum_size = Vector2(1050, 600)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_tj26a")
+script = ExtResource("2_62h8k")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 16
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 16
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/separation = 32
+
+[node name="TitleLabel" type="Label" parent="MarginContainer/ContentContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 64
+text = "Welcome to the Tutorial"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextLabel" type="Label" parent="MarginContainer/ContentContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 32
+text = "Disclaimer: This is the first prototype and there will be mayor changes.
+This version is not meant for end users and hasn't been tested
+If you've got any questions please email me under: 
+boom@thetwoboom.xyz
+Version v0.1 released on 19.12.2025 for Hack Club YSWS \"Midnight\""
+horizontal_alignment = 1
+
+[node name="ButtonContainer" type="HBoxContainer" parent="MarginContainer/ContentContainer"]
+layout_mode = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="BackButton" type="Button" parent="MarginContainer/ContentContainer/ButtonContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+disabled = true
+text = "Back"
+
+[node name="NextButton" type="Button" parent="MarginContainer/ContentContainer/ButtonContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Next"
+
+[connection signal="pressed" from="MarginContainer/ContentContainer/ButtonContainer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="MarginContainer/ContentContainer/ButtonContainer/NextButton" to="." method="_on_next_button_pressed"]

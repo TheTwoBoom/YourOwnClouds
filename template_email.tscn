@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvd1xyt10yxtp"]
+
+[ext_resource type="Texture2D" uid="uid://bncwy5tm0vwve" path="res://assets/email_icons/inquiry.tres" id="1_0ydkq"]
+[ext_resource type="FontFile" uid="uid://h5lhoy8ttlqj" path="res://assets/Geo-Regular.ttf" id="2_r5v7u"]
+
+[node name="TemplateEmail" type="HBoxContainer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(48, 48)
+layout_mode = 2
+texture = ExtResource("1_0ydkq")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.22745098, 0.22745098, 0.3137255, 1)
+theme_override_fonts/normal_font = ExtResource("2_r5v7u")
+theme_override_font_sizes/normal_font_size = 42
+bbcode_enabled = true
+text = "Server Inquiry"
+fit_content = true
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1

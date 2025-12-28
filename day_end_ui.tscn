@@ -1,0 +1,231 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgjl1iwew2m34"]
+
+[ext_resource type="Theme" uid="uid://bgihxlm45a5q2" path="res://main_theme.tres" id="1_6pycm"]
+[ext_resource type="Texture2D" uid="uid://c7axykdwxo6m6" path="res://assets/Modern_UI_Style_1_48x48.png" id="2_7nmmq"]
+[ext_resource type="Script" uid="uid://blftr3omttmyj" path="res://scripts/day_end_ui.gd" id="3_7nmmq"]
+
+[node name="DayEndUI" type="NinePatchRect"]
+process_mode = 3
+texture_filter = 1
+custom_minimum_size = Vector2(658, 448)
+theme = ExtResource("1_6pycm")
+texture = ExtResource("2_7nmmq")
+region_rect = Rect2(24, 72, 96, 93)
+patch_margin_left = 32
+patch_margin_top = 32
+patch_margin_right = 32
+patch_margin_bottom = 32
+script = ExtResource("3_7nmmq")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 28
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 22
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 48
+text = "Summary"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FinanceContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Descriptions" type="HBoxContainer" parent="MarginContainer/VBoxContainer/FinanceContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="EmptyLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Descriptions"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+horizontal_alignment = 2
+
+[node name="IncomeLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Descriptions"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+text = "Income"
+horizontal_alignment = 1
+
+[node name="ExpensesLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Descriptions"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+text = "Expenses"
+horizontal_alignment = 1
+
+[node name="Pos1" type="HBoxContainer" parent="MarginContainer/VBoxContainer/FinanceContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="DescriptionLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos1"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+text = "Rent:"
+horizontal_alignment = 2
+
+[node name="IncomeLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos1"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.043137256, 0.43137255, 0.1764706, 1)
+theme_override_font_sizes/normal_font_size = 30
+horizontal_alignment = 1
+
+[node name="ExpensesLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos1"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.6784314, 0.09803922, 0.1254902, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "0"
+horizontal_alignment = 1
+
+[node name="Pos2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/FinanceContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="DescriptionLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos2"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+text = "Uplinks:"
+horizontal_alignment = 2
+
+[node name="IncomeLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos2"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.043137256, 0.43137255, 0.1764706, 1)
+theme_override_font_sizes/normal_font_size = 30
+horizontal_alignment = 1
+
+[node name="ExpensesLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos2"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.6784314, 0.09803922, 0.1254902, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "0"
+horizontal_alignment = 1
+
+[node name="Pos3" type="HBoxContainer" parent="MarginContainer/VBoxContainer/FinanceContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="DescriptionLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos3"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+text = "Power:"
+horizontal_alignment = 2
+
+[node name="IncomeLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos3"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.043137256, 0.43137255, 0.1764706, 1)
+theme_override_font_sizes/normal_font_size = 30
+horizontal_alignment = 1
+
+[node name="ExpensesLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos3"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.6784314, 0.09803922, 0.1254902, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "0"
+horizontal_alignment = 1
+
+[node name="Pos4" type="HBoxContainer" parent="MarginContainer/VBoxContainer/FinanceContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+alignment = 1
+
+[node name="DescriptionLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos4"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+text = "Customers:"
+horizontal_alignment = 2
+
+[node name="IncomeLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos4"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.043137256, 0.43137255, 0.1764706, 1)
+theme_override_font_sizes/normal_font_size = 30
+text = "0"
+horizontal_alignment = 1
+
+[node name="ExpensesLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/Pos4"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/default_color = Color(0.6784314, 0.09803922, 0.1254902, 1)
+theme_override_font_sizes/normal_font_size = 30
+horizontal_alignment = 1
+
+[node name="TotalContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/FinanceContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="DescriptionLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/TotalContainer"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+text = "Balance:"
+horizontal_alignment = 2
+
+[node name="TotalLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/FinanceContainer/TotalContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/normal_font_size = 30
+text = "400$"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+alignment = 1
+
+[node name="QuitButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Save & Quit"
+
+[node name="NextButton" type="Button" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Next Day"
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/HBoxContainer/NextButton" to="." method="_on_next_button_pressed"]

@@ -1,0 +1,334 @@
+{
+  "level": 0,
+  "money": 2000,
+  "inbox": [2, 5, 1, 6, 4],
+  "tutorial": false,
+  "activeCustomers": [
+  ],
+  "availableLocations": [
+	{
+	  "id": 1,
+	  "displayName": "Basement",
+	  "size": "small",
+	  "rent": 0,
+	  "powerCost": 0.1,
+	  "uplinks": [
+		{
+		  "id": 1,
+		  "type": "isp",
+		  "sla": 99.09,
+		  "speed": 1000,
+		  "speedUnit": "MBit",
+		  "cost": 100
+		}
+	  ],
+	  "racks": [
+		{
+		  "x": 1,
+		  "y": 1,
+		  "rackunits": 11
+		},
+		{
+		  "x": 2,
+		  "y": 1,
+		  "rackunits": 11
+		},
+		{
+		  "x": 3,
+		  "y": 1,
+		  "rackunits": 11
+		},
+		{
+		  "x": 4,
+		  "y": 1,
+		  "rackunits": 11
+		},
+		{
+		  "x": 5,
+		  "y": 1,
+		  "rackunits": 11
+		},
+		{
+		  "x": 6,
+		  "y": 1,
+		  "rackunits": 11
+		},
+		{
+		  "x": 7,
+		  "y": 1,
+		  "rackunits": 11
+		},
+		{
+		  "x": 8,
+		  "y": 1,
+		  "rackunits": 11
+		},
+		{
+		  "x": 1,
+		  "y": 2,
+		  "rackunits": 11
+		},
+		{
+		  "x": 2,
+		  "y": 2,
+		  "rackunits": 11
+		},
+		{
+		  "x": 3,
+		  "y": 2,
+		  "rackunits": 11
+		},
+		{
+		  "x": 4,
+		  "y": 2,
+		  "rackunits": 11
+		},
+		{
+		  "x": 5,
+		  "y": 2,
+		  "rackunits": 11
+		},
+		{
+		  "x": 6,
+		  "y": 2,
+		  "rackunits": 11
+		},
+		{
+		  "x": 7,
+		  "y": 2,
+		  "rackunits": 11
+		},
+		{
+		  "x": 8,
+		  "y": 2,
+		  "rackunits": 11
+		},
+		{
+		  "x": 1,
+		  "y": 3,
+		  "rackunits": 11
+		},
+		{
+		  "x": 2,
+		  "y": 3,
+		  "rackunits": 11
+		},
+		{
+		  "x": 3,
+		  "y": 3,
+		  "rackunits": 11
+		},
+		{
+		  "x": 4,
+		  "y": 3,
+		  "rackunits": 11
+		},
+		{
+		  "x": 5,
+		  "y": 3,
+		  "rackunits": 11
+		},
+		{
+		  "x": 6,
+		  "y": 3,
+		  "rackunits": 11
+		},
+		{
+		  "x": 7,
+		  "y": 3,
+		  "rackunits": 11
+		},
+		{
+		  "x": 8,
+		  "y": 3,
+		  "rackunits": 11
+		},
+	  ],
+	  "crossConnections": [
+		{
+			"id": 1,
+			"from": {
+				"locId": 1,
+				"x": 0,
+				"y": 0,
+				"rackunit": 0
+			},
+			"to": {
+				"locId": 1,
+				"x": 0,
+				"y": 0,
+				"rackunit": 0
+			}
+		}
+	  ]
+	}
+  ],
+  "inventory": {
+	"devices": [
+	  {
+		"type": "server",
+		"name": "WhyNot Rack 3010",
+		"serverID": 1,
+		"caseID": "whynot-rack-2u",
+		"customer": -1,
+		"location": {
+			"id": 1,
+			"x": 1,
+			"y": 1,
+			"rackunit": 0
+		},
+		"height": 2,
+		"network": "2x10",
+		"maxPowerConsumption": 250,
+		"components": [
+		  {
+			"type": "mainboard",
+			"name": "GreatCom 1S-SP3",
+			"amount": 1,
+			"internalID": "greatcom-1s-sp3"
+		  },
+		  {
+			"type": "cpu",
+			"name": "BMD Epix 1445",
+			"amount": 1,
+			"internalID": "bmd-epix-1445"
+		  },
+		  {
+			"type": "ram",
+			"name": "Generix 32GB DDR4",
+			"amount": 8,
+			"internalID": "generix-32gb-ddr4"
+		  },
+		  {
+			"type": "ssd",
+			"name": "SungSung 1.96TB",
+			"amount": 6,
+			"internalID": "sungsung-1.96tb"
+		  },
+		  {
+			"type": "psu",
+			"name": "SuperPSU1000",
+			"amount": 2,
+			"internalID": "superpsu1000"
+		  },
+		  {
+			"type": "fan",
+			"name": "Wrrr HighPerf 80mm",
+			"amount": 4,
+			"internalID": "wrrr-highperf-80mm"
+		  },
+		  {
+			"type": "cpucooler",
+			"name": "CoolAir Rack-1",
+			"amount": 1,
+			"internalID": "coolair-rack-1"
+		  }
+		]
+	  },
+	  {
+		"type": "server",
+		"name": "WhyNot Rack 3010",
+		"serverID": 2,
+		"caseID": "whynot-rack-2u",
+		"customer": -1,
+		"location": {
+			"id": -1,
+			"x": -1,
+			"y": -1,
+			"rackunit": 1
+		},
+		"height": 2,
+		"network": "2x10",
+		"maxPowerConsumption": 250,
+		"components": [
+		  {
+			"type": "mainboard",
+			"name": "GreatCom 1S-SP3",
+			"amount": 1,
+			"internalID": "greatcom-1s-sp3"
+		  },
+		  {
+			"type": "cpu",
+			"name": "BMD Epix 1445",
+			"amount": 1,
+			"internalID": "bmd-epix-1445"
+		  },
+		  {
+			"type": "ram",
+			"name": "Generix 32GB DDR4",
+			"amount": 8,
+			"internalID": "generix-32gb-ddr4"
+		  },
+		  {
+			"type": "ssd",
+			"name": "SungSung 1.96TB",
+			"amount": 6,
+			"internalID": "sungsung-1.96tb"
+		  },
+		  {
+			"type": "psu",
+			"name": "SuperPSU1000",
+			"amount": 2,
+			"internalID": "superpsu1000"
+		  },
+		  {
+			"type": "fan",
+			"name": "Wrrr HighPerf 80mm",
+			"amount": 4,
+			"internalID": "wrrr-highperf-80mm"
+		  },
+		  {
+			"type": "cpucooler",
+			"name": "CoolAir Rack-1",
+			"amount": 1,
+			"internalID": "coolair-rack-1"
+		  }
+		]
+	  }
+	],
+	"components": [
+	  {
+		"type": "mainboard",
+		"name": "GreatCom 1S-SP3",
+		"amount": 1,
+		"internalID": "greatcom-1s-sp3"
+	  },
+	  {
+		"type": "cpu",
+		"name": "BMD Epix 1445",
+		"amount": 1,
+		"internalID": "bmd-epix-1445"
+	  },
+	  {
+		"type": "ram",
+		"name": "Generix 32GB DDR4",
+		"amount": 8,
+		"internalID": "generix-32gb-ddr4"
+	  },
+	  {
+		"type": "ssd",
+		"name": "SungSung 1.96TB",
+		"amount": 6,
+		"internalID": "sungsung-1.96tb"
+	  },
+	  {
+		"type": "psu",
+		"name": "SuperPSU1000",
+		"amount": 2,
+		"internalID": "superpsu1000"
+	  },
+	  {
+		"type": "fan",
+		"name": "Wrrr HighPerf 80mm",
+		"amount": 4,
+		"internalID": "wrrr-highperf-80mm"
+	  },
+	  {
+		"type": "cpucooler",
+		"name": "CoolAir Rack-1",
+		"amount": 1,
+		"internalID": "coolair-rack-1"
+	  }
+	]
+  },
+}

@@ -1,0 +1,121 @@
+[gd_scene load_steps=5 format=3 uid="uid://cchj42ast031l"]
+
+[ext_resource type="Texture2D" uid="uid://c7axykdwxo6m6" path="res://assets/Modern_UI_Style_1_48x48.png" id="1_s385w"]
+[ext_resource type="Texture2D" uid="uid://b7wtkictesp0d" path="res://assets/player.png" id="2_h7a6l"]
+[ext_resource type="FontFile" uid="uid://h5lhoy8ttlqj" path="res://assets/Geo-Regular.ttf" id="3_o8rbo"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hs4kw"]
+atlas = ExtResource("1_s385w")
+region = Rect2(624, 1248, 48, 52)
+
+[node name="HUDContainer" type="MarginContainer"]
+texture_filter = 1
+offset_right = 564.0
+offset_bottom = 192.0
+theme_override_constants/margin_left = 32
+theme_override_constants/margin_top = 32
+theme_override_constants/margin_right = 32
+theme_override_constants/margin_bottom = 32
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="PlayerStatsRect" type="NinePatchRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(384, 82)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("1_s385w")
+region_rect = Rect2(174, 555, 84, 87)
+patch_margin_left = 24
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/PlayerStatsRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 49
+theme_override_constants/margin_top = 49
+theme_override_constants/margin_right = 48
+theme_override_constants/margin_bottom = 48
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/PlayerStatsRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="PlayerLabel" type="TextureRect" parent="VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_h7a6l")
+
+[node name="LevelLabel" type="Label" parent="VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_o8rbo")
+theme_override_font_sizes/font_size = 26
+text = "Level 1"
+
+[node name="CoinsContainer" type="HBoxContainer" parent="VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CoinsLabel" type="Label" parent="VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer/CoinsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_o8rbo")
+theme_override_font_sizes/font_size = 32
+text = "500"
+horizontal_alignment = 2
+
+[node name="CoinsIcon" type="TextureRect" parent="VBoxContainer/PlayerStatsRect/MarginContainer/HBoxContainer/CoinsContainer"]
+layout_mode = 2
+texture = SubResource("AtlasTexture_hs4kw")
+expand_mode = 3
+
+[node name="ClockRect" type="NinePatchRect" parent="VBoxContainer"]
+custom_minimum_size = Vector2(300, 64)
+layout_mode = 2
+size_flags_horizontal = 0
+texture = ExtResource("1_s385w")
+region_rect = Rect2(174, 555, 84, 87)
+patch_margin_left = 24
+patch_margin_top = 24
+patch_margin_right = 24
+patch_margin_bottom = 24
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/ClockRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/ClockRect/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="DateLabel" type="Label" parent="VBoxContainer/ClockRect/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_o8rbo")
+theme_override_font_sizes/font_size = 26
+text = "1st Dec."
+
+[node name="ClockLabel" type="Label" parent="VBoxContainer/ClockRect/MarginContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_fonts/font = ExtResource("3_o8rbo")
+theme_override_font_sizes/font_size = 26
+text = "6:00 AM"

@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpf8xyrvgmvb4"]
+
+[ext_resource type="Script" uid="uid://den5aicy7qpl5" path="res://scripts/template_component.gd" id="1_yu46v"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_4g626"]
+size = Vector2(96, 96)
+
+[node name="HBoxContainer" type="HBoxContainer"]
+script = ExtResource("1_yu46v")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_4g626")
+
+[node name="Label" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/default_color = Color(0.22745098, 0.22745098, 0.3137255, 1)
+theme_override_font_sizes/normal_font_size = 40
+bbcode_enabled = true
+text = "Text"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="meta_clicked" from="Label" to="." method="_on_label_meta_clicked"]

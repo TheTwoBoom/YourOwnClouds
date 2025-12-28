@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=3 uid="uid://chfwqdihy0aio"]
+
+[ext_resource type="Texture2D" uid="uid://bo4otlyvycf75" path="res://assets/server_shelf.png" id="1_d6x0g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d6x0g"]
+size = Vector2(60, 86)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8mys0"]
+size = Vector2(60, 56)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8mys0"]
+atlas = ExtResource("1_d6x0g")
+region = Rect2(18, 3, 60, 87)
+
+[node name="ServerShelf2D" type="StaticBody2D"]
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_d6x0g")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, 70)
+shape = SubResource("RectangleShape2D_8mys0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("AtlasTexture_8mys0")
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_body_exited"]

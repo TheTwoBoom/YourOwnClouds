@@ -1,0 +1,309 @@
+[
+  {
+	"displayName": "Servers",
+	"inventoryType": "device",
+	"internalID": "server",
+	"items": [
+	  {
+		"displayName": "WhyNot Rack 3010",
+		"internalID": "whynot-rack-3010",
+		"description": "A ready to use Server with 64GB of DDR4 RAM and an BMD Epix 1335 24-Core 2.35GHz CPU. No storage included",
+		"price": 1250,
+		"specs": {
+			"case": ["whynot-rack-2u"],
+			"mainboard": ["greatcom-1s-sp3"],
+			"cpu": ["bmd-epix-1335"],
+			"cpucooler": [],
+			"ram": ["generix-32gb-ddr4", "generix-32gb-ddr4"],
+			"psu": ["superpsu1000"],
+			"ssd": [],
+			"hdd": [],
+			"fan": ["wrrr-highperf-80mm", "wrrr-highperf-80mm"]
+		}
+	  },
+	  {
+		"displayName": "WhyNot Rack 3010s",
+		"internalID": "whynot-rack-3010s",
+		"description": "A ready to use Server with 64GB of DDR4 RAM and an BMD Epix 1335 24-Core 2.35GHz CPU. Also includes 2x 1.92TB SSDs",
+		"price": 1650,
+		"specs": {
+			"case": ["whynot-rack-2u"],
+			"mainboard": ["greatcom-1s-sp3"],
+			"cpu": ["bmd-epix-1335"],
+			"cpucooler": [],
+			"ram": ["generix-32gb-ddr4", "generix-32gb-ddr4"],
+			"psu": ["superpsu1000"],
+			"ssd": ["sungsung-1.96tb", "sungsung-1.96tb"],
+			"hdd": [],
+			"fan": ["wrrr-highperf-80mm", "wrrr-highperf-80mm"]
+		}
+	  },
+	  {
+		"displayName": "WhyNot Rack 3020s",
+		"internalID": "whynot-rack-3020",
+		"description": "A ready to use Server with 128GB of DDR4 RAM and an BMD Epix 1445 32-Core 3.2GHz CPU. Also includes 4x 1.92TB SSDs",
+		"price": 2500,
+		"specs": {
+			"case": ["whynot-rack-2u"],
+			"mainboard": ["greatcom-1s-sp3"],
+			"cpu": ["bmd-epix-1335"],
+			"cpucooler": [],
+			"ram": ["generix-32gb-ddr4", "generix-32gb-ddr4"],
+			"psu": ["superpsu1000"],
+			"ssd": ["sungsung-1.96tb", "sungsung-1.96tb", "sungsung-1.96tb", "sungsung-1.96tb"],
+			"hdd": [],
+			"fan": ["wrrr-highperf-80mm", "wrrr-highperf-80mm"]
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "Cases",
+	"inventoryType": "component",
+	"internalID": "case",
+	"items": [
+	  {
+		"displayName": "WhyNot Rack 2U",
+		"internalID": "whynot-rack-2u",
+		"description": "A simple 2U Rackmount Case with 8x 3.5\" HDD Bays and 4x 2.5\" SSD Bays",
+		"price": 200,
+		"specs": {
+			"max-hdds": 8,
+			"max-ssds": 4,
+			"max-mainboard-size": "E-ATX",
+			"rackunits": 2,
+			"power": 0
+		}
+	  },
+	  {
+		"displayName": "WhyNot Rack 1U",
+		"internalID": "whynot-rack-1u",
+		"description": "A simple 1U Rackmount Case with 4x 3.5\" HDD Bays and 2x 2.5\" SSD Bays",
+		"price": 150,
+		"specs": {
+			"max-hdds": 4,
+			"max-ssds": 2,
+			"max-mainboard-size": "E-ATX",
+			"rackunits": 1,
+			"power": 0
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "Mainboards",
+	"inventoryType": "component",
+	"internalID": "mainboard",
+	"items": [
+	  {
+		"displayName": "GreatCom 1S-SP3",
+		"internalID": "greatcom-1s-sp3",
+		"description": "Simple E-ATX Mainboard for a single Socket SP3 BMD Epix System. 6x PCIe 4.0 x16 and 2x 10GBit Network Ports",
+		"price": 450,
+		"specs": {
+			"formfactor": "E-ATX",
+			"sockel-amount": 1,
+			"sockel-type": "SP3",
+			"ram-type": "DDR4",
+			"ram-slots": 8,
+			"pcie-slots": ["4.0-x16", "4.0-x16", "4.0-x16", "4.0-x16", "4.0-x16", "4.0-x16"],
+			"m.2-slots": [2280, 2280],
+			"network-ports": ["mRJ45-1GBit", "SFP-10GBit", "SFP-10Gbit"],
+			"power": 55
+		}
+	  },
+	  {
+		"displayName": "GreatCom 1S-AM4",
+		"internalID": "greatcom-1s-am4",
+		"description": "Simple ATX Mainboard for a single Socket AM4 Riven System. 2x PCIe x16 and 2x 1GBit Network Ports",
+		"price": 145,
+		"specs": {
+			"formfactor": "ATX",
+			"sockel-amount": 1,
+			"sockel-type": "SP3",
+			"ram-type": "DDR4",
+			"ram-slots": 4,
+			"pcie-slots": ["4.0-x16", "4.0-x16"],
+			"m.2-slots": [2280, 2280],
+			"network-ports": ["mRJ45-1GBit", "RJ45-1GBit", "RJ45-1Gbit"],
+			"power": 35
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "CPUs",
+	"inventoryType": "component",
+	"internalID": "cpu",
+	"items": [
+	  {
+		"displayName": "BMD Epix 1335",
+		"internalID": "bmd-epix-1335",
+		"description": "24-Core 2.35GHz CPU with a TDP of 105W. Uses the SP3 Socket",
+		"price": 350,
+		"specs": {
+			"cpu-gen": 1,
+			"cores": 24,
+			"threads": 48,
+			"multi-sockel": true,
+			"base-clock": 2.35,
+			"turbo-clock": 3.20,
+			"sockel-type": "SP3",
+			"power": 105
+		}
+	  },
+	  {
+		"displayName": "BMD Epix 1445",
+		"internalID": "bmd-epix-1445",
+		"description": "32-Core 3.2GHz CPU with a TDP of 165W. Uses the SP3 Socket",
+		"price": 550,
+		"specs": {
+			"cpu-gen": 1,
+			"cores": 32,
+			"threads": 64,
+			"multi-sockel": true,
+			"base-clock": 3.20,
+			"turbo-clock": 3.20,
+			"sockel-type": "SP3",
+			"power": 165
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "RAM",
+	"inventoryType": "component",
+	"internalID": "ram",
+	"items": [
+	  {
+		"displayName": "Generix 32GB DDR4",
+		"internalID": "generix-32gb-ddr4",
+		"description": "A single stick of 32GB DDR4-2666 ECC RAM, cheap but delivers good performance",
+		"price": 75,
+		"specs": {
+			"power": 5
+		}
+	  },
+	  {
+		"displayName": "Generix 64GB DDR4",
+		"internalID": "generix-64gb-ddr4",
+		"description": "A single stick of 64GB DDR4-2666 ECC RAM, cheap but delivers good performance",
+		"price": 165,
+		"specs": {
+			"power": 8
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "SSDs",
+	"inventoryType": "component",
+	"internalID": "ssd",
+	"items": [
+	  {
+		"displayName": "SungSung 1.96TB",
+		"internalID": "sungsung-1.96tb",
+		"description": "Perfect Read/Write Speeds. Very high durability",
+		"price": 280,
+		"specs": {
+			"power": 5
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "HDDs",
+	"inventoryType": "component",
+	"internalID": "hdd",
+	"items": [
+	  {
+		"displayName": "Brrr Enterprise 16TB",
+		"internalID": "brrr-enterprise-16tb-3.5",
+		"description": "Makes BRRRR, and is slow as hell. Is also very cheap per TB",
+		"price": 250,
+		"specs": {
+			"power": 25
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "Power Supplies",
+	"inventoryType": "component",
+	"internalID": "psu",
+	"items": [
+	  {
+		"displayName": "SuperPSU1000",
+		"internalID": "superpsu1000",
+		"description": "Great PSU, Type 1000",
+		"price": 1000,
+		"specs": {
+			"power": 55
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "Cooling Fans",
+	"inventoryType": "component",
+	"internalID": "fan",
+	"items": [
+	  {
+		"displayName": "Wrrr HighPerf 80mm",
+		"internalID": "wrrr-highperf-80mm",
+		"description": "Makes WRRR, and is moving air quickly! What else do you expect from a fan?",
+		"price": 15,
+		"specs": {
+			"power": 10
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "CPU Coolers",
+	"inventoryType": "component",
+	"internalID": "cpucooler",
+	"items": [
+	  {
+		"displayName": "CoolAir Rack-1",
+		"internalID": "coolair-rack-1",
+		"description": "Reliable and efficient air cooling for simple Rackmount Servers, compatible with 2U+ Cases",
+		"price": 45,
+		"specs": {
+			"power": 15
+		}
+	  }
+	]
+  },
+  {
+	"displayName": "Network Switches",
+	"inventoryType": "device",
+	"internalID": "switch",
+	"items": [
+	  {
+		"displayName": "WhyNot 10G-24P",
+		"internalID": "whynot-10g-24p",
+		"description": "A 24-Port 10G Network Switch with 2x 40G Uplink Ports",
+		"price": 1200,
+		"specs": {
+		}
+	  },
+	  {
+		"displayName": "WhyNot 1G-48P",
+		"internalID": "whynot-1g-48p",
+		"description": "A 48-Port 1G Network Switch with 4x 10G Uplink Ports",
+		"price": 800,
+		"specs": {
+		}
+	  },
+	  {
+		"displayName": "WhyNot 1G-24P",
+		"internalID": "whynot-1g-24p",
+		"description": "A 24-Port 1G Network Switch with 2x 10G Uplink Ports",
+		"price": 500,
+		"specs": {
+		}
+	  }
+	]
+  }
+]

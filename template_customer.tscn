@@ -1,0 +1,106 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk3gc6ror77cy"]
+
+[ext_resource type="StyleBox" uid="uid://c43th45amo85f" path="res://StyleBoxFlat.tres" id="1_151r1"]
+[ext_resource type="Texture2D" uid="uid://b7wtkictesp0d" path="res://assets/player.png" id="1_tc7fv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iae10"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.16924524, 0.16924533, 0.16924512, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="PanelContainer" type="PanelContainer"]
+size_flags_horizontal = 3
+theme_override_styles/panel = ExtResource("1_151r1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 8
+theme_override_constants/margin_bottom = 8
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="IconTexture" type="TextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+texture = ExtResource("1_tc7fv")
+stretch_mode = 5
+
+[node name="NameLabel" type="Label" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Test Person 1"
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_iae10")
+
+[node name="EmailLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer/PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Email:"
+horizontal_alignment = 1
+
+[node name="PanelContainer2" type="PanelContainer" parent="MarginContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_iae10")
+
+[node name="ProductsLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer/PanelContainer2"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Products:"
+horizontal_alignment = 1
+
+[node name="PanelContainer3" type="PanelContainer" parent="MarginContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_iae10")
+
+[node name="SupportLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer/PanelContainer3"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "supportType:"
+horizontal_alignment = 1
+
+[node name="PanelContainer4" type="PanelContainer" parent="MarginContainer/VBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(0, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_iae10")
+
+[node name="SpendingLabel" type="Label" parent="MarginContainer/VBoxContainer/GridContainer/PanelContainer4"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Monthly spend:"
+horizontal_alignment = 1
